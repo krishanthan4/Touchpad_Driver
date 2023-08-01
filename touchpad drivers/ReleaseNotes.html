@@ -1,0 +1,6385 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Synaptics Drivers Release Notes</title>
+
+<style>
+body {
+margin: 0;
+padding: 0;
+font-family: Calibri,Tahoma, Arial;
+background-color: #fff;
+}
+
+#wrapper {
+width: 1200px;
+margin: 0px auto;
+background-color: #fff;
+}
+
+#header {
+margin: 0;
+padding: 0;
+padding-bottom: 0.5cm;
+padding-top: 0.5cm;
+padding-left: 0.5cm;
+height: 160px;
+text-align: left;
+background-color: #f1f1f1;
+}
+
+#header h1 {
+color: #333;
+margin: 0;
+padding-top: 20px;
+padding-bottom: 5px;
+font-size: 45px;
+letter-spacing: 4px;
+}
+
+#header h2 {
+color: #333;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 5px;
+font-size: 17px;
+letter-spacing: 2px;
+}
+
+#container {
+width: 1200px;
+}
+
+#aside {
+float: left;
+width: 200px;
+display: block;
+}
+
+#aside p {
+padding: 25px;
+padding-left: 10px;
+padding-top: 7px;
+padding-bottom: 7px;
+text-align: justify;
+line-height: 19px;
+font-size: 16px;
+color: #999;
+}
+
+#footer {
+clear: both;
+margin: 0;
+padding: 0;
+height: 50px;
+background-color: #fff;
+}
+
+#footer h3 {
+color: #fff;
+padding: 0;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 14px;
+letter-spacing: 2px;
+text-align: center;
+font-weight: normal;
+}
+
+#footer p {
+font-style: italic;
+font-size: 10px;
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+#section {
+float: left;
+width: 1200px;
+display: block;
+}
+
+.xxlargetText {
+font-size: 1.3em;
+}
+
+.issue {
+width: 450px;
+}
+.td {
+width: 100px;
+}
+
+.des {
+width: 70%;
+}
+
+#section #version {
+width: 1200px;
+margin: 0px auto;
+margin-top: 10px;
+margin-bottom: 10px;
+text-align: left;
+background-color: #fff;
+}
+
+#section #version #header {
+height: 10px;
+padding-top: 5px;
+padding-bottom: 15px;
+}
+
+#section #version #footer {
+clear: both;
+height: 20px;
+}
+
+#section #version #header h1 {
+color: #fff;
+margin: 0;
+padding-top: 10px;
+padding-bottom: 5px;
+font-size: 20px;
+letter-spacing: 4px;
+text-align: left;
+text-indent: 10px;
+}
+
+#version p {
+padding: 15px;
+padding-top: 7px;
+padding-bottom: 7px;
+text-align: justify;
+line-height: 19px;
+font-size: 14px;
+}
+
+#version #footer h3 {
+color: #fff;
+margin: 0;
+padding-top: 2px;
+padding-bottom: 2px;
+font-size: 14px;
+letter-spacing: 4px;
+text-align: right;
+font-weight: normal;
+font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+#wrapper, #container {
+width: 500px;
+}
+
+#aside, #section, #section #version {
+float: none;
+width: 100%;
+}
+
+#header {
+height: 90px;
+}
+
+#header h1 {
+font-size: 25px;
+padding-top: 10px;
+padding-bottom: 3px;
+}
+
+#header h2 {
+font-size: 13px;
+padding-top: 10px;
+padding-bottom: 3px;
+}
+
+#section #version #header {
+height: 20px;
+}
+
+#section #version #footer {
+height: 15px;
+}
+
+#section #version #header h1 {
+font-size: 12px;
+padding-top: 5px;
+padding-bottom: 2px;
+}
+
+#version #footer h3 {
+padding: 1px;
+font-size: 11px;
+}
+}
+
+
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<img src="http://www.synaptics.com/sites/all/themes/synaptics/logo.png" alt="Synaptics">
+<br />
+<br />
+Synaptics Driver Release Notes for DellWPF
+<br><br>OS: 32-bit and 64-bit Windows 7, Windows 8, Windows 8.1 and Windows 10
+<br>
+Languages Supported:  English, Arabic, Portuguese (Brazil), Croatian, Czech, Danish, French, French Canadian, Finnish, Greek, German, Hungarian, Indonesian, Hebrew, Italian, Japanese, Korean, Spanish (Mexico), Dutch, Norwegian Bokmal, Polish, Portuguese, Romanian, Russian, Swedish, Slovakian, Spanish (Spain), Slovenian, Thai, Turkish, Traditional Chinese, and Simplified Chinese.
+</div>
+
+<div id="container">
+<div id="section">
+<br>
+<!--syna-insert-here-->
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.59
+
+  Date: 04-26-2017</strong></div><br><br>
+<table border="1" cellpadding="5">  
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35328<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">[DELL_PTPHID] Silent Uninstall can't remove files clearly  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36010<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Kyloren-KBL - TP no function after S3 LR.  </td>
+<td align="left" valign="top" class="issue">The PTP inbox driver queue could stall during S3 LR stress test. If inbox driver is stalled, touch is not working and require restart device.  </td>
+<td align="left" valign="top" class="issue">Changed PTP touchpad filter driver to configure and handle framework power management events.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36017<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Vegas][SKL][WIN7x64] TP should work when enable "Disable TP when USB mouse present" before USB mouse plug in  </td>
+<td align="left" valign="top" class="issue">There are two virtual mouse device in Vegas device.
+Touchpad will be disabled when virtual mouse device is detected.  </td>
+<td align="left" valign="top" class="issue">Add two virtual mouse device into Exclusion list.
+When virtual mouse device is detected, they will be filtered.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36246<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Italia] Touchpad no function at login screen when disabled in OS.  </td>
+<td align="left" valign="top" class="issue">For MTP device, TP driver will be enabled by itself when the session is changed. However, there is no feature on PTP device.  </td>
+<td align="left" valign="top" class="issue">For PTP filter driver, we will not show the popup notification when the session is change.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36311<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Remove HWID for Italia (PTP filter driver)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Remove HWID "DELL07E6" for Italia.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36316<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Apply HWID for Loki13" and Armani 13"/14" (PTP filter driver)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Apply new HWID for Loki13" and Armani 13"/14".  </td>
+</tr>
+<tr>
+<td class="td">
+HFW-2576<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Kylo Ren | Input Test Result from MSFT  </td>
+<td align="left" valign="top" class="issue">Finger packet is delayed and "sampling rate" is reduced from 135/s to 121/s.  </td>
+<td align="left" valign="top" class="issue">Call the notify callback function directly and pass context, the slave address, and the data. It can increase "sampling rate" from  121/s to 135/s.
+  </td>
+</tr>
+</tbody></table>
+<br> 
+Feature Added
+<table border="1" cellpadding="5" width="800px">  
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-36197<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Change TP enable\disable icon  </td>
+</tbody></table>
+<br> 
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.58
+
+Date: 04-06-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36206<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Synaptic touchpad, slow scrolling Firefox and Chrome, try to slowly scroll with 2 fingers at the touchpad.  </td>
+<td align="left" valign="top" class="issue">When scrolling with small amount, our "ScrollingSmoothnessFactor" adjustment has bug that will change scrolling directions form time to time, so to make scrolling not smooth.  </td>
+<td align="left" valign="top" class="issue">For now, do not turn-on the flag so scrolling will response to finger's actual speed properly, until we fixed bug.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36242<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Modify HWID for Starlord KBL R (PTP filter driver)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Change some HWID from HID\DELL0704, HID\DELL0708, HID\DELL0709 to HID\DELL0804, HID\DELL0808, HID\DELL0809.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36248<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Firestart 15"/Armani 15" Apply HWIDs  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.57
+
+Date: 03-28-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36010<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Kyloren-KBL - TP no function after S3 LR.  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36033<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Apply HWID for Starlord KBL R (PTP filter driver)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.56
+
+Date: 03-21-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-36033<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Apply HWID for Starlord KBL R (PTP filter driver)  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-36074<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Apply HWID for Vegas Win7  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWIF into v19.2.17 Dell main branch.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.55
+
+Date: 02-07-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35846<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[DellWPF_Win10_PTP Filter Driver] Can't successfully install v19.2.17.54 DellWPF.inf driver on Dell Loveland system (HIN-759)  </td>
+<td align="left" valign="top" class="issue">Some paths in PTP filter driver are not correct, so they cause TP driver fail to launch.  </td>
+<td align="left" valign="top" class="issue">Modify Progfiles location to Dell\Touchpad.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.54
+
+Date: 01-19-2017</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35144<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Berlinetta P MLK - Apply HWID for ACPI\DLL07BF  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-35336<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[DELLWPF_PTPHID] Failed to uncheck the feature of "Disable navigation in the button zone" while performing one-finger click on left button zone  </td>
+<td align="left" valign="top" class="issue">When navigation state  is changed from "enabled" state to "disabled" state, we will modify tip state of PTP finger packet. Sometimes, we can report unnecessary finger packet. It causes wrong behavior.  </td>
+<td align="left" valign="top" class="issue">We only check navigation state if device packet with finger down comes.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-35391<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Dell_Win7] 2F scroll, rotate, pinch and 3F swipe up/down/left/right and 4F swipe left/right gesture not working after resuming from S4  </td>
+<td align="left" valign="top" class="issue">When 4F swipe gesture is triggered, we don't release SuppressProcess function. Multi-finger gestures will be blocked by SuppressProcess function.  </td>
+<td align="left" valign="top" class="issue">We need to release "SuppressProcess" function after all finger are released.
+it can avoid that other gestures fails.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-35762<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Please add releasenote into Dell folder after driver installation   </td>
+<td align="left" valign="top" class="issue">Release note doesn't exit in Dell folder.  </td>
+<td align="left" valign="top" class="issue">Add release note into Dell folder.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-35402<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Merge DellWPF_PTPHID.inf into DellWPF.inf  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.53
+
+Date: 12-20-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34173<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Change proper touchpad picture on mouse properies.  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">We will choose correct picture after detecting device type(TPPB or TPIB).
+Hence, we can change any picture dynamically.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.52
+
+Date: 12-07-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34173<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Change proper touchpad picture on mouse properies.  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">We will choose correct picture after detecting device type(TPPB or TPIB).
+Hence, we can change any picture dynamically.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.51
+
+Date: 11-30-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35278<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[Win7] Can't switch active applications via 4F swipe up/down, left/right gesture  </td>
+<td align="left" valign="top" class="issue">We customized some cursor feature in Win 8 or 8.1. We use "ShowWindow" api to modify window style. However, it causes wrong style of Windows 7.   </td>
+<td align="left" valign="top" class="issue">If OS is Windows 7, we will not call ShowWindow() to show our cursor.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.50
+
+Date: 11-23-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34560<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Vostro HSW 3558 - Check disk will be cancelled automatically after installing touchpad driver  </td>
+<td align="left" valign="top" class="issue">After disable/enable keyboard, EC will send a scan code.
+Scan disk will be cancelled by this scan code.  </td>
+<td align="left" valign="top" class="issue">For short term, remove 97 command and disable MUX of KBC.
+For long term, EC should check why it needs to sends a scan code.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-34879<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Pop up Windows Security message on 19.2.17.42  </td>
+<td align="left" valign="top" class="issue">Sometimes, temporary files(v18.1.44.0) are not removed after installing v18.1.44.0.
+Some files(SynRMIHID.inf or SynSmbDrv.inf) are not used in new TP driver. However, they still exit in temporary folder.
+OS will show warming message if we use wrong files to install TP driver.  </td>
+<td align="left" valign="top" class="issue">Remove old temporary files before extracted new driver package.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-35144<font color="red">  &cross;</font>  </td>
+<td align="left" valign="top" class="issue">Berlinetta P MLK - Apply HWID for ACPI\DLL07BF  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-35187<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Change icon for touchpad enable/disable notification  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Upload Dell's notification icon.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.49
+
+Date: 11-17-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35144<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Berlinetta P MLK - Apply HWID for ACPI\DLL07BF  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.48
+
+Date: 11-15-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-35144<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Berlinetta P MLK - Apply HWID for ACPI\DLL07BF  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Add new HWID.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.47
+
+Date: 10-26-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34560<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Vostro HSW 3558 - Check disk will be cancelled automatically after installing touchpad driver  </td>
+<td align="left" valign="top" class="issue">After disable/enable keyboard, EC will send a scan code.
+Scan disk will be cancelled by this scan code.  </td>
+<td align="left" valign="top" class="issue">For short term, remove 97 command and disable MUX of KBC.
+For long term, EC should check why it needs to sends a scan code.  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-34112<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Driver location change to Windows apps Dell folder  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.46
+
+Date: 10-12-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34495<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Can move touchpad icon to pop up message?  </td>
+<td align="left" valign="top" class="issue">  </td>
+<td align="left" valign="top" class="issue">Customized notification icon.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.45
+
+Date: 09-19-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34358<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[DELL] Silent Uninstall can't remove files clearly  </td>
+<td align="left" valign="top" class="issue">Duplicate of HDR-33047
+Missing start /wait
+rundll32.exe "c:\Program Files\Synaptics\SynTP\SynISDLL.dll",SilentUninstall_CallerWillReboot  </td>
+<td align="left" valign="top" class="issue">Note if to run silent uninstall then reboot in a script
+#  Need to run the script elevated as admin
+#  Add *start /wait* for the call of rundll32 so the uninstall must finish before the script call to shutdown -r -t 0
+start /wait rundll32.exe "c:\Program Files\Synaptics\SynTP\SynISDLL.dll",SilentUninstall_CallerWillReboot
+shutdown -r -t   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-34552<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">[DELL_Win10_Miniport] TouchPad not working after overwrite install v19.2.17.44 DELLWPF.inf  </td>
+<td align="left" valign="top" class="issue">After overwrite install the same driver, we don't need to disable/enable HID mini driver again.
+Additional "disable/enable Touchpad" command causes HID mini driver fail.
+</td>
+<td align="left" valign="top" class="issue">Remove additional "disable/enable Touchpad" command.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.44
+
+Date: 09-09-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34485<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Vegas(miniport driver)-Cannot switch off thru MSFT PTP GUI  </td>
+<td align="left" valign="top" class="issue">Root cause:
+Coinstall maybe fail to get install relative value only from HKR or HKLM because kernel driver will move these values from HKR to HKLM while loading at first time.  </td>
+<td align="left" valign="top" class="issue"> Solution:
+Get these values from both HKR and HKLM.  </td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.43
+
+Date: 08-29-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-34258<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Drax - There is no click function while left and right figner on TP  </td>
+<td align="left" valign="top" class="issue">Clicking is filtered by "Origination filter" feature.
+</td>
+<td align="left" valign="top" class="issue">For ACM2.0, we don't enable "Origination filter" feature.
+For ACM2.1, we also will disable it.
+</td>
+</tr>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.42
+
+Date: 08-21-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:20%" bordercolor=white>Description</th>
+<th style="width:40%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-33656<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Loveland - Touchpad increasing the CPU utilization to 50%.  </td>
+<td align="left" valign="top" class="issue">For that CPU utilization is too high, the root cause might be the system is stopping the process and processing the cmd timeout to cause the high CPU utilization when 97 cmd isn&#8217;t issued.
+</td>
+<td align="left" valign="top" class="issue">Dell requests to remove 97 command.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-34077<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">Dell Cassini 15/17: TP backlight issue when activating TP by zigzag gesture  </td>
+<td align="left" valign="top" class="issue">After reading EC's status, busy bit will be launched. We will be blocked by busy bit before sending FF command to clear busy bit.  </td>
+<td align="left" valign="top" class="issue">After reading EC's status, busy bit will be launched. Compal suggests that we should ignore busy bit and check IBF bit.
+We will follow Compal's flow chart of 686C port.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-34183<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top" class="issue">BSOD (0x9F) on RS1  </td>
+<td align="left" valign="top" class="issue">WDF request is not completed.  </td>
+<td align="left" valign="top" class="issue">Complete the WDF request  </td>
+</tr>
+</tbody></table>
+<br>
+Feature Added
+<table border="1" cellpadding="5" width="800px">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:90%" bordercolor=white>Description</th>
+</tr>
+<tr>
+<td>
+HDR-32253<font color="green">  &checkmark;</font>  </td>
+<td align="left" valign="top">Dell PTP filter driver: enalbe/disable navigation in button zone and improve cursor jumping and zig zag  </td>
+</tbody></table>
+<br>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.41
+
+Date: 07-26-2016</strong></div><br><br>
+<table border="1" cellpadding="5">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-32253<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Dell PTP filter driver: enalbe/disable navigation in button zone and improve cursor jumping and zig zag  </td>
+<td class="issue">  </td>
+<td class="issue">Per customer request, added PTP filter driver feature to enable/disable navigation in button zones.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33609<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Please check hot key disable Ctrl+Win+F24 on MTP driver and Mini port driver  </td>
+<td class="issue">  </td>
+<td class="issue">Support Hot Key Disable "Ctrl+Win+F24".  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33877<font color="orange">  &orarr;</font>  </td>
+<td class="issue">Could you also study 4finger swipe (Win logo key + Ctrl + Left/Right) for non-PTP and supports this gesture from Win 10 RS1  </td>
+<td class="issue">  </td>
+<td class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33885<font color="green">  &checkmark;</font>  </td>
+<td class="issue">BSOD on Drax 19.2.17.33   </td>
+<td class="issue">RtlIsNtDdiVersionAvailable is only used in PASSIVE_LEVEL. The IRQL at which a driver routine executes determines which kernel-mode driver support routines it can call. For example, some driver support routines require that the caller be running at IRQL = DISPATCH_LEVEL. Others cannot be called safely if the caller is running at any IRQL higher than PASSIVE_LEVEL.  </td>
+<td class="issue">Check OS version at PASSIVE_LEVEL.  </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.40
+
+Date: 07-10-2016</strong></div><br><br>
+<table border="1">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-33609<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Please check hot key disable Ctrl+Win+F24 on MTP driver and Mini port driver  </td>
+<td class="issue">  </td>
+<td class="issue">Support Hot Key Disable "Ctrl+Win+F24".  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33726<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Dell Alienware 13 (Echo 13): cannot open GUI in Win10 BPOR language  </td>
+<td class="issue">Some setting is wrong in PT-BR language XML.
+It causes parsing function fail.  </td>
+<td class="issue">Correct wrong setting.  </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.39
+
+Date: 07-06-2016</strong></div><br><br>
+<table border="1">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-33806<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Dell Turis: change driver from miniport to MTP (PnPID: HID\DELL078A, HID\DELL0789, HID\DELL078C, etc)  </td>
+<td class="issue">Dell requests to change driver from miniport to MTP.  </td>
+<td class="issue">Change driver from miniport to MTP.  </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.38
+
+Date: 07-01-2016</strong></div><br><br>
+<table border="1">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-31630<font color="green">  &checkmark;</font>  </td>
+<td class="issue">[Win10_Dell_RMIHID_HIDMINI] Miniport driver setting did not be cleaned after turned off TouchPad then uninstalled / installed driver.  </td>
+<td class="issue">The user disabled Precision TouchPad from MS settings GUI. Uninstall and reinstall driver, the HKCU Precision TouchPad registry is still disabled.  </td>
+<td class="issue">The driver will check and enable Precision TouchPad after clean install.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33177<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Pop up message while driver install on PTP  </td>
+<td class="issue">  </td>
+<td class="issue">- Update code for setup installation with MatchID based on OS supported
+- Added new message "No need to install Synaptics pointing device drivers."
+Only one OK button, when click will exit installation with success code as 0  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33476<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Dell Vegas: 2-finger scrolling failed sometimes on Chrome browser  </td>
+<td class="issue">For T1321 device with ACM2.1, we need to add ACM2.1 setting.
+If we don't add ACM2.1 setting, the cursor may be disabled by "hovering object".  </td>
+<td class="issue">Add ACM2.1 setting and avoid that PTP packet is disabled by "hovering object".  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33597<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Synaptics mup.xml registry setting is quite different from my understanding.   </td>
+<td class="issue">Some mup configuration is wrong and doesn't meet Dell mup team's request.  </td>
+<td class="issue">Correct mup configuration.   </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33669<font color="green">  &checkmark;</font>  </td>
+<td class="issue">TP No function at right hand side | 19.3.4.10 | Acer.Inf(MiniPort Driver)  </td>
+<td class="issue">We should use our service to disable/enable the device to re-enumerate the HID device to retrive PTP report descriptor so that the touchpad size information in report descriptor will be correct.  </td>
+<td class="issue">Add the setting in EnhCallerService to disable/enable our device once the touchpad size in registry is generated.  </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.37
+
+Date: 05-31-2016</strong></div><br><br>
+<table border="1">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-33312<font color="green">  &checkmark;</font>  </td>
+<td class="issue">[Dell_Win10] Tapping function will be triggered when user do 2F scrolling continuously in Store application  </td>
+<td class="issue">We modify the condition of "PS2" function that converts one by one PS/2 raw packets into a group of packets. When the finger count of PS2 RawPacket is less than 2F, we will lose some primary finger data. Wrong  primary finger data causes 1F tap action.  </td>
+<td class="issue">Correct the condition of "PS2" function that converts one by one PS/2 raw packets into a group of packets. We will not get wrong primary finger data.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33392<font color="green">  &checkmark;</font>  </td>
+<td class="issue">[Dell_Win10] TouchPad did not pop up notification when user enable "Disable Touchpad when USB Mouse present" function then plug / unplug external USB mouse.   </td>
+<td class="issue">TP notification is disabled.   </td>
+<td class="issue">Enable TP notification.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33422<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Dell Cassini15/17: TP buttons no function   </td>
+<td class="issue">"Omni mode" function is used for clickpad device(TPIB), not touchpad devce(TPPB).
+For TPPB device, Omni mode function should not be used.
+It will break "both button" feature if Omnni mode function is used on TPPB device.  </td>
+<td class="issue">If device type is TPPB, "Omni mode" function will not be used.  </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.36
+
+Date: 05-24-2016</strong></div><br><br>
+<table border="1">
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-33082<font color="green">  &checkmark;</font><br>(1260340)  </td>
+<td class="issue">SIO1260340 - SFT_Touch_HOU/Test Plan/2016 Synaptics TouchPad Driver_UXUI_Test Plan_v0.1: Expected result in line 481 is not matching with the Actual result.  </td>
+<td class="issue">We simulate wheel-mouse scrolling for Windows Photo Viewer, so scrolling on touchpad just as same as using an USB mouse to move mouse-wheels, which is zooming. This behavior is not a bug but by Target window's response to mouse-wheels.  </td>
+<td class="issue">Since user asks for doing scrolling rather than zooming, and we do not have this feature before, we just added a new feature to handle scrolling with this application.
+(internal info:
+we do not have key scroll for continuous scrolling, i.e., when we use key scrolling, we generally only do once for plugin action; we also never did real vertical scrolling with key scroll; now we can use Alt + arrow keys to scroll in this window app, with some adjustment in speed so scroll will be quick and smooth).  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33176<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Provide test driver for clicksmart and behavior leverage PTP  </td>
+<td class="issue">  </td>
+<td class="issue">Change "Click Action" to follow Microsoft's behavior.
+Customer needs to use specific registry to change clickpad mode from "Omni" to "ClickSmart".
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-33236<font color="green">  &checkmark;</font>  </td>
+<td class="issue">[Dell_Win10] Button function will unworkable after enabled touchpad by zigzag gesture.  </td>
+<td class="issue">After using Dell GUI to disable touchpad state, button state has been disabled at the same time.
+Zigzag gesture only enables touchpad statue, not button state.   </td>
+<td class="issue">When we use Dell GUI to disable touchpad state, we don't disable button state at the same time.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33334<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Berlinetta MLK - Remove HWIDs DLL07BE and DLL07BF  </td>
+<td class="issue">  </td>
+<td class="issue">Remove DLL07BE and DLL07BF HWIDs.   </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.35
+
+Date: 05-16-2016</strong></div><br><br>
+<table> border="1"
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-33178<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Page will jump back and Sometime scrolling speed will become fast  </td>
+<td class="issue">  </td>
+<td class="issue">Add timer method. Time difference between last touch-injection packet and current touch-injection packet must be more than 8 ms.  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33176<font color="green">  &checkmark;</font>  </td>
+<td class="issue">Provide test driver for clicksmart and behavior leverage PTP  </td>
+<td class="issue">  </td>
+<td class="issue">Change "Click Action" to follow Microsoft's behavior.
+Customer needs to use specific registry to change clickpad mode from "Omni" to "ClickSmart".
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.34
+
+Date: 05-10-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%" bordercolor=white>Issue Number</th>
+<th style="width:30%" bordercolor=white>Description</th>
+<th style="width:30%" bordercolor=white>Root Cause</th>
+<th style="width:30%" bordercolor=white>Solution</th></tr>
+<tr>
+<td class="td">
+HDR-32783  </td>
+<td class="issue">[Dell_Win10] Primary button can be triggered by 24mm and 30mm slug.  </td>
+<td class="issue">  </td>
+<td class="issue">  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33146  </td>
+<td class="issue">Remove Dino2 MLK HWIDs  </td>
+<td class="issue">  </td>
+<td class="issue"><br>(I have removed Dino2 MLK HWIDs in the trunk and v19.2.17 Dell test main branch.)  </td>
+</tr>
+<tr>
+<td class="td">
+HDR-33168  </td>
+<td class="issue">[Dell_Win7] Scrolling bar will jump and not smooth when user do two finger (2F) scrolling by IE browser.   </td>
+<td class="issue"><br>(Update root cause.
+In Windows 7, Scroll bar will jump when mouseData is more than 300.
+)  </td>
+<td class="issue"><br>(Solution :
+Change scrolling method on Windows 7 IE from "SendInput" to "SendMessageTimeout".)  </td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.33
+
+Date: 05-03-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32748  </td>
+<td class="issue">Improve gesture performance while we remove touch injection on HDR-32317  </td>
+<td class="issue">Move code from "setup" to "SynTPcol" because setup.exe will not be executed on Windows update.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-33120  </td>
+<td class="issue">Iris_KBL - Apply HWIDs DELL07AE and DELL07AF  </td>
+<td class="issue">Apply HWIDs for Iris_KBL.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-33141  </td>
+<td class="issue">Berlinetta MLK - Apply HWIDs DLL07BE and DLL07BF  </td>
+<td class="issue">Apply HWIDs for Berlinetta MLK
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-33150  </td>
+<td class="issue">[Dell_Win10] Two finger (2F) click can't trigger shortcut menu.  </td>
+<td class="issue">Two finger (2F) click can't trigger shortcut menu.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.32
+
+Date: 04-28-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-33067  </td>
+<td class="issue">[Dell_Win10] Cortana and Action center still can be triggered after unchecked 3F / 4F tap then saved.  </td>
+<td class="issue">Fix an issue that 3F/4F-tap action still triggered even if is disabled.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.31
+
+Date: 04-27-2016</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.16
+
+Date: 04-22-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32978  </td>
+<td class="issue">Build Request - 19.2.17 | DellWPF  </td>
+<td class="issue">According to Dell UX team's request, remove touch-injection feature on Degas, Iris device.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.15
+
+Date: 04-21-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-33013  </td>
+<td class="issue">disable button can`t keep state after tablet mode -> normal mode  </td>
+<td class="issue">Merge code : Remove button action process from disabling/enabling TP.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32900  </td>
+<td class="issue">[SUS_Iris BSW&BDW] Three finger Gestures of Swipe Left/Right have no function.  </td>
+<td class="issue">In Win 7 and Win8.1, 3F/4F finger Gestures of Swipe Left/Right have no function.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32959  </td>
+<td class="issue">Taos - Apply HWIDs  </td>
+<td class="issue">Apply HWIDs for Taos.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.14
+
+Date: 04-20-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32943  </td>
+<td class="issue">Degas AMD - Use one finger select another finger quickly move folder will be a shortmenu.(FR:100%)  </td>
+<td class="issue">Use one finger select another finger quickly move folder. The shortmenu will be trigered. Fix Omni mode bug.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32979  </td>
+<td class="issue">TP still work after go to tablet mode  </td>
+<td class="issue">Add PseudoSuspend enable/disable Key for  tablet mode.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.13
+
+Date: 04-18-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32952  </td>
+<td class="issue">Degas AMD - Degas-AMD:The TP Palm Rejection function will auto check if uncheck after PM station.(FR:100%)  </td>
+<td class="issue">Palm Rejection function will be enabled automatically after S3/S4/restart/S5.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.12
+
+Date: 04-14-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32748  </td>
+<td class="issue">Improve gesture performance while we remove touch injection on HDR-32317  </td>
+<td class="issue">Don't show "touchinjection" feature on system information.; Because touchinjection's information will not be showed on system info page and the layout of the time and date display is correct, enable touchinjection feature on Iris, Degas devices.; Don't show "touchinjection" feature on system information. The layout of the time and date display in taskbar shouldn't be changed even if we use touchinjection feature.; [ ] Remove unnecessary code and add comments.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.11
+
+Date: 04-01-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32802  </td>
+<td class="issue">[Dell_Win10] Three fingers (3F) flick up will trigger task view when user do 3F swipe up from windows minimize with Mouse properties window.  </td>
+<td class="issue">Fixed Win10 three finger gesture task view window display issue.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.10
+
+Date: 03-28-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32317  </td>
+<td class="issue">Degas AMD - The time and date display incomplete in taskbar  </td>
+<td class="issue">Don't show "Windows touch support with 2 touch points" on system information before we use touch-injection.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.9
+
+Date: 03-25-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32597  </td>
+<td class="issue">3F Flick fail rate issue and did not match to Demo video  </td>
+<td class="issue">[branch] v19_2_17_main_branch: 3F flick down fail at first bootup without any Win+D appear.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.8
+
+Date: 03-24-2016</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.7
+
+Date: 03-23-2016</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.6
+
+Date: 03-22-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32548  </td>
+<td class="issue">Dell unified driver: combine DELLWPF and DELLWPF_RMIHID and DELLWPF_RMIHID_HIDMINI into one package  </td>
+<td class="issue">Rollback code.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32702  </td>
+<td class="issue">  Iris - Remove touch screen support (same as HDR-32317)  </td>
+<td class="issue">Remove touchinjection feature on these HWIDs (Dll0731, Dll0732, DLL06AB,DLL06AC, DLL06B0, DLL06B1 ).
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.5
+
+Date: 03-22-2016</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.4
+
+Date: 03-21-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32548  </td>
+<td class="issue">Dell unified driver: combine DELLWPF and DELLWPF_RMIHID and DELLWPF_RMIHID_HIDMINI into one package  </td>
+<td class="issue">Separate Win7/8.1/10 HWID in unified driver.; Remove DellWPF UI on mini port driver.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32685  </td>
+<td class="issue">Dell Turis (Win10 miniport PTP): add PnPID HID\DELL078A, HID\DELL0789, HID\DELL078C, etc  </td>
+<td class="issue">Add PnPID for Dell Turis.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32687  </td>
+<td class="issue">[Win10_Dell_RMIHID_HIDMINI] The frame of switching apps will keep flicker when user do 3F horizontal swipe.  </td>
+<td class="issue">Disable all zone for HIDMINI and PTP device.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.3
+
+Date: 03-17-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32548  </td>
+<td class="issue">Dell unified driver: combine DELLWPF and DELLWPF_RMIHID and DELLWPF_RMIHID_HIDMINI into one package  </td>
+<td class="issue">Remove DellWPF UI on mini port driver.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.2
+
+Date: 03-16-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32548  </td>
+<td class="issue">Dell unified driver: combine DELLWPF and DELLWPF_RMIHID and DELLWPF_RMIHID_HIDMINI into one package  </td>
+<td class="issue">Remove DellWPF UI on mini port driver.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32641  </td>
+<td class="issue"> Fireload - Apply HWIDs  </td>
+<td class="issue">Apply HWIDs for Fireload.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17.1
+
+Date: 03-16-2016</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.17
+
+Date: 03-11-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32203  </td>
+<td class="issue">Dell miniport driver - drag and drop file  </td>
+<td class="issue">Disable palm spliting feature on HIDMINI driver temporarily. Dell UX reports that it is hard to drag and drop file after enabling palm spliting feature.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.16
+
+Date: 03-03-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32477  </td>
+<td class="issue">[Dell_Win10] Clicking function can be triggered by 24mm and 30mm slug.  </td>
+<td class="issue">Clicking function shouldn't be triggered by 24mm and 30mm slug.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.15
+
+Date: 02-25-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32442  </td>
+<td class="issue">SMBus driver support for new AMD CPU Stoney  </td>
+<td class="issue">SMBus driver support for AMD Stoney.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.14
+
+Date: 02-18-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32085  </td>
+<td class="issue">  Dell Gamora 15/17: apply two more HWIDs DELL077D, DELL077E  </td>
+<td class="issue">Remove Gamora PNPID by Dell's request. Dell changed decision about no win8.1/win7 support so we don't have to build driver for Gamora.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.13
+
+Date: 02-12-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32234  </td>
+<td class="issue">[Win10_Dell_RMIHID_HIDMINI] Clicking function can be triggered by 24mm & 30mm slugs.  </td>
+<td class="issue">Rename ContinuouslyPalmCountAsValidPalm to ContinuouslyPalmCountAsValidPalmAfterFinger; Improve palm filter to convert palm to finger more flexible
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.12
+
+Date: 02-05-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-32202  </td>
+<td class="issue">Sometimes TouchPad Button doesn't work on login screen  </td>
+<td class="issue">We should update Button Status when lid close/open disable device is called. The function EnableButtonActions called in DisableDeviceAndButton will check the setting "ButtonsEnabledDisabledWithDevice" So it won't break the feature that button disable/enable which should be independent from touchpad device disable/enable state.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32319  </td>
+<td class="issue">[HID/USB] Observed opposite scroll direction while performing 2F edge motion scroll in MS Edge  </td>
+<td class="issue">Fix injection bug (reverse scroll doesn't work)
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32263  </td>
+<td class="issue">Dino2 MLK Apply HWIDs  </td>
+<td class="issue">Apply HWIDs for Dino2 MLK "DLL075B".
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.11
+
+Date: 01-28-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Move Echo HWIDs (without DLL068B) from DellWPF_ECHO to DellWPF. DLL068B is duplicated for ECHO13(PS2/I2C) and ECHO15/17(PS2/SMB). Because ACPI\DLL068B is used for Synaptics HID device, DellWPF driver should be installed wrong. It causes driver fail and yellow bang. We can't use duplicated HWID in unified driver(DellWPF). Hence, keep DLL068B in DellWPF_ECHO.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28619  </td>
+<td class="issue">DELLWPF_RMIHID: TP button no function after resuming from CB without external mouse connected  </td>
+<td class="issue">We shouldn't save/change "EnableButtonAction" registry when button state is disabled by external mouse.; [ ] Rollback code
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32146  </td>
+<td class="issue">Astro/Dali - Apply HWIDs  </td>
+<td class="issue">Apply HWIDs for Astro/Dali.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32169  </td>
+<td class="issue">Degas 15" AMD - wrong click behavior  </td>
+<td class="issue">Left/right button zone use driver default for ClickZone mode: 50% width of pad for L/R button width
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.10
+
+Date: 01-21-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31800  </td>
+<td class="issue">Iris non PTP -3F swipe up and down have wrong behavior (there is no test mode show up). It is different with PTP  </td>
+<td class="issue">Sometimes we detected wrong Windows hide/show stae. TP driver still detected "all  apps windows are hided" even if one or more apps are open.; If DesktopZ value is not zero, we can check ZOrder directly. For some Windows app, there is no minimized box. If we check WS_MINIMIZEBOX style, we will detect wrong Windows state.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32072  </td>
+<td class="issue">[Win10_Dell_RMIHID_HIDMINI] TouchPad will be enabled after turned off TouchPad then resumed from S3 (Sleep) lid action.  </td>
+<td class="issue">When ScheduleThread fails, PTP device will not be enabled/disabled.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.9
+
+Date: 01-14-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31756  </td>
+<td class="issue">Cursor suppressed from moving sometimes when moving the cursor on the desktop for mini port driver  </td>
+<td class="issue">Add PalmCheck thresholds for PTP miniport driver withACM2.1
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32032<br>(111825)  </td>
+<td class="issue">Vertical & Horizontal scrolling is hard to use after zoom in photo  </td>
+<td class="issue">TouchInjection still works in win10 but we have to inject 1 Finger instead of 2 Fingers. We apply touchinjection because after zoom-in in Photos App, horizontal scrolling should move the picture left or right continuously.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32058  </td>
+<td class="issue">Dell Cassini15/17: no Dell logo in driver installation page and GUI  </td>
+<td class="issue">Remove Dell logo in driver installation page and GUI.; Remove Dell logo in driver installation page and GUI; [Followup] Check name rule.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-32064  </td>
+<td class="issue">Dell Gamora 15/17: apply HWIDs  </td>
+<td class="issue">Apply HWIDs for Dell Gamora 15/17.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.8
+
+Date: 01-07-2016</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31942  </td>
+<td class="issue">Tray icon lost but SYNTPENH still exsit  </td>
+<td class="issue">When someone had deleted our tray icon, the error code should be ERROR_TIMEOUT. Shell_NotifyIcon can't be deleted or modified before we add new tray icon. We should check correct error code and add tray icon again.; Restart SynTPEnh while tray icon can't refresh
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.7
+
+Date: 12-17-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31450  </td>
+<td class="issue">3F drags and slides video  </td>
+<td class="issue">Fix win10 3 finger vertical slide video
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31882  </td>
+<td class="issue">Change finger threshold to match FW for Imaging Sensor TP  </td>
+<td class="issue">Changed slider min, max and frequency to meet defautl value change in the driver.; Changed finger threshold to match FW for Imaging Sensor TP
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30529  </td>
+<td class="issue">[Dell_Marble Falls] TouchPad status icon show incorrect status when user connect with external monitor then close lid.  </td>
+<td class="issue">TouchPad status icon show "disable" state when user connect with external monitor then close lid.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30893  </td>
+<td class="issue">DellWPF_RMIHID - 2.	3finger up and down is not stable. While use three finger up to call out app will also call out the all apps list at same time.  </td>
+<td class="issue">Improve "3F flick up/down" performance.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.6
+
+Date: 12-11-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31430  </td>
+<td class="issue">2F scrolling will cross more than one page on "photos” and "IE”  </td>
+<td class="issue">Injection for scrolling gesture in Microsoft Photos app should start from app window center rather than from the cursor.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30893  </td>
+<td class="issue">DellWPF_RMIHID - 2.	3finger up and down is not stable. While use three finger up to call out app will also call out the all apps list at same time.  </td>
+<td class="issue">Improve "3F flick up/down" performance.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31313  </td>
+<td class="issue">[Dell] Two finger (2F) horizontal scroll can't be triggered by MS Office PowerPoint.  </td>
+<td class="issue">Change touchinjection setting on MS Office PowerPoint.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31396  </td>
+<td class="issue">2F horizontal scroll is too sensitive in Windows Photo Apps  </td>
+<td class="issue">Update settings for 2F scrolling in MS Photos for win10 Th2 (or v10586).; Set key scroll for Horizontal scroll in Microsoft Photos for win10.; Update 2F scrolling for Microsoft Photos in latest version of win10 (TH2 or v10586)
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.5
+
+Date: 12-03-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31713<br>(109532)  </td>
+<td class="issue">Synaptics TP has no Scrolling function by Windows Photo Browser  </td>
+<td class="issue">Send only 1 finger position for metro photos
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31743  </td>
+<td class="issue">Report rate calculation is wrong on non-PS2 platform if there are more than 1 finger on the pad  </td>
+<td class="issue">Fixed a wrong logic that causes the driver uses wrong report rate for MF case.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31756  </td>
+<td class="issue">Cursor suppressed from moving sometimes when moving the cursor on the desktop for mini port driver  </td>
+<td class="issue">Don't convert non-finger to palm for miniport driver.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.4
+
+Date: 11-26-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31576  </td>
+<td class="issue">[Dell_Win10] Inertial scrolling can be triggered by Microsoft Edge after disabled setting from DELL Pointing Devices.   </td>
+<td class="issue">When user disables intertial scrolling, disable the momentum feature on touch-injection.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.3
+
+Date: 11-19-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+PRJ-35733  </td>
+<td class="issue">Inertia, coasting and edge motion support for TouchInjection  </td>
+<td class="issue">Make scroll speed adjustment supported in touch injection
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31363  </td>
+<td class="issue">TouchPad still be function by external monitor when simulate LCD close  </td>
+<td class="issue">Add lid open/close setting by default. TP driver will check system lid event by default.; 1. Add lid open/close setting by default. TP driver will check system lid event by default. 2. When metro app is minimized, metro app should be counted. 3F swipe left and rigth can switch apps while the apps are over two rows 3 . Enable touch-injection on Win10 all apps page. 4. Change sliderScale from 115 to 110 by Dell request.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.2
+
+Date: 11-12-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31551  </td>
+<td class="issue">Add PS2 query $11  </td>
+<td class="issue">Added PS2 $11 query for integrated stick
+</td>
+</tr>
+<tr>
+<td class="td">
+PRJ-35733  </td>
+<td class="issue">Inertia, coasting and edge motion support for TouchInjection  </td>
+<td class="issue">Add 1 finger chiral scroll supported in touch action. add some performance fix
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30885  </td>
+<td class="issue">[Dell_Redwood Braswell] Palm function can't be triggered and mouse cursor can be moved by 24mm slug.  </td>
+<td class="issue">Use the default "W" threshold.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31545  </td>
+<td class="issue">New PnPID request : Drax  </td>
+<td class="issue">1. Add new HWID. 2 Consolidate code.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31578  </td>
+<td class="issue">[Dell_Rocket] v19.2.1_DellWPF unified driver can't be installed successfully on Dell Rocket.  </td>
+<td class="issue">Change Rocket HWID.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.1
+
+Date: 11-06-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-12003  </td>
+<td class="issue">Review location of driver parameters  </td>
+<td class="issue">Moved some registry from HKLM\system.... to HKLM\Software\Synaptice\.. because they are put in wrong place.; Fixed a build error.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-12577  </td>
+<td class="issue">remove the m_pPluginAction from the zone  </td>
+<td class="issue">Removed the m_pPluginAction from the zone.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Enable touch-injection feature on Edge.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30631  </td>
+<td class="issue">One driver to fix same issue across two different platforms.  </td>
+<td class="issue">DLL068B is duplicated for ECHO13(PS2/I2C) and ECHO15/17(PS2/SMB). Because ACPI\DLL068B is used for Synaptics HID device, DellWPF driver should be installed wrong. It causes driver fail and yellow bang. We can't use duplicated HWID in unfied driver(DellWPF). Hence, separate all ECHO15/17 HWID to another driver "DellWPF_ECHO".; Correct the typo.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31313  </td>
+<td class="issue">[Dell] Two finger (2F) horizontal scroll can't be triggered by MS Office PowerPoint.  </td>
+<td class="issue">Enable touchinjection feature on MS Office PowerPoint.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31330  </td>
+<td class="issue">Iris Braswell - 3F swipe left and rigth cannot switch apps while the apps are over two rows  </td>
+<td class="issue">When metro app is minimized, metro app should be counted. 3F swipe left and rigth can switch apps while the apps are over two rows
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31456  </td>
+<td class="issue">PNP ID change Rocket  </td>
+<td class="issue">PNP ID change for Rocket.; PNP ID change for Rocket.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.2.0
+
+Date: 10-29-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31431  </td>
+<td class="issue">Touchinjection error occurs when lifting one finger up during 2 finger gestures  </td>
+<td class="issue">Fix injection error. If the lifted up finger is finger 0 then we have no chance to go into slide to call cancel action of touch action, and we also do not contine to feed in moving finger of touch screen, then OS will found we time out to feed in touch screen packet and neither to send a finger up packet to end the stroke, then there is time out error.
+</td>
+</tr>
+<tr>
+<td class="td">
+PRJ-35733  </td>
+<td class="issue">Inertia, coasting and edge motion support for TouchInjection  </td>
+<td class="issue">Add code to make touch injection support 1 finger scrolling. And fix a bug
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30631  </td>
+<td class="issue">One driver to fix same issue across two different platforms.  </td>
+<td class="issue">1.  Implement unfied driver for Dell.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31330  </td>
+<td class="issue">Iris Braswell - 3F swipe left and rigth cannot switch apps while the apps are over two rows  </td>
+<td class="issue">When metro app is minimized, metro app should be counted. 3F swipe left and right can switch apps while the apps are over two rows
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31345  </td>
+<td class="issue">2F scroll speed slow one level by default   </td>
+<td class="issue">1. Enable touch-injection on Win10 all apps page. 2. Change sliderScale from 115 to 110 by Dell request.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.1.3
+
+Date: 10-22-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">New language translations for Windows installer, help files and control panel
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31326<br>(ECR358436)  </td>
+<td class="issue">Vertical/Horizontal Swipe checkbox under three fingers will auto be checked when switch tab in Gesture.  </td>
+<td class="issue">The hidden control should not get or set settings
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31349  </td>
+<td class="issue">Add back the logs for KTL Enhancement  </td>
+<td class="issue">Adding back KTL Enhancement log for different Stroke State.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">We still need to install SMBus driver for FW with SMBus bootloader.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.1.2
+
+Date: 10-15-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Fix the error message on Dell Mup verification tool.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31278  </td>
+<td class="issue">WHLK issue - 19.0.15.14 Fault injection fail as BSOD issue.  </td>
+<td class="issue">Added kernel protection to fix the WHLK surprise WDF API failure.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.1.1
+
+Date: 10-08-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Add new HWIDs for Iris AMD Beema and Degas AMD Beema.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30911  </td>
+<td class="issue">[Dell Win10] Two finger (2F) horizontal scrolling can't be triggered with Weather app.  </td>
+<td class="issue">Enable touchinjection feature on Weather app.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.27
+
+Date: 09-29-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-31137  </td>
+<td class="issue">    DELLWPF_RMIHID: MUP error when driver installed successfully on Echo13/15/17     </td>
+<td class="issue">MUP error when driver installed successfully
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.26
+
+Date: 09-29-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30955  </td>
+<td class="issue">Win 10 PTP like 3 finger gesture: We should do nothing when doing 3 finger horizontal flick in task switcher window with "new desktop" button    </td>
+<td class="issue">Fix win10-like 3 finger flick issue in new windows internet browser. And add emit; Change win 10 PTP like 3 finger flick gesture behavior
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-31037  </td>
+<td class="issue">When connect 2 PCs using a usb file transfer cable, and then use the mosue to move cursor between 2 PCs, then do 3 finger flick down, the behavior is not correct  </td>
+<td class="issue">fix win 10 like 3 finger flick issue
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30893  </td>
+<td class="issue">DellWPF_RMIHID - 2.	3finger up and down is not stable. While use three finger up to call out app will also call out the all apps list at same time.  </td>
+<td class="issue">"3finger up once" gesture only calls out the previous app when all app are minimized.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30958  </td>
+<td class="issue"><Latitude OAK HSW Issue tracker>Synaptics touchpad cannot auto be enabled on Win10 lock screen  </td>
+<td class="issue">Use disablekey(without GlobalDisable) to replace PseudoSuspendDisableKey. When logging other account, driver setting will not be affected by previous user.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.25
+
+Date: 09-10-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30773  </td>
+<td class="issue">[  Win10] Alt + Tab / 3 finger left - right swipes to switch application function can be triggered after put 1 finger on the touchpad then do zoom / pinch gesture by another 2 fingers.  </td>
+<td class="issue">If one finger is not in resting zone, the other 2 fingers perform pinch gesture, then when thease 2 fingers lift up, we might triggered the 3 finger flick gesture.  We should always do the finger direction check no metter the finger counts
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30887  </td>
+<td class="issue">Press Win + M to minimize all windows then Press Win + Tab to launch task switcher, then do 3 finger flick it will close the task switcher  </td>
+<td class="issue">Fix win10-like 3 finger flick up bug
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30922  </td>
+<td class="issue">Double tap to disable the touchpad it shows "ON" at the Mouse & touchpad  </td>
+<td class="issue">Wrong logic, a TP enable/diswable hot key only was sent to disable TP, otherwise the TP is disabled, there is no chance to sent the hotkey to enable it.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30121  </td>
+<td class="issue">[Dell_Marble Falls] Click and tap functions will abnormal and trigger "Alt + Double click (tap)" or "Shift + click (tap)" after executed diagnostic page.  </td>
+<td class="issue">Added code to workaround PS2 key up missing issue. For a few Dell systems, when we are opening the diagnostic page, the system could not send Shift+Alt+I key up and that caused gesture actions not working. Implemented a workaround to relase Shift+Alt+I keys.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30768  </td>
+<td class="issue">DELLWPF_RMIHID: something wrong when cancelling MUP driver installation on Echo13/15/17     </td>
+<td class="issue">When installing process is canceled by end user, we need to return "Error" state, not "Success" state.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.24
+
+Date: 09-04-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+PRJ-35570  </td>
+<td class="issue">Change coinstaller and setup program to install HID/SMB miniport driver  </td>
+<td class="issue">Added Dpinst exit code
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Fix gibberish in some language.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30684  </td>
+<td class="issue">DELLWPF_RMIHID: TP driver cannot be installed in Chinese win10 on Pandora Refresh  </td>
+<td class="issue">Fix "TP driver can't be installed in Chinese Win10" issue.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30773  </td>
+<td class="issue">[Dell Win10] Alt + Tab / 3 finger left - right swipes to switch application function can be triggered after put 1 finger on the touchpad then do zoom / pinch gesture by another 2 fingers.  </td>
+<td class="issue">Do not trigger 3 finger flick when 2 finger pinch/scrolling with resting fingers is triggered.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.23
+
+Date: 08-27-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30012  </td>
+<td class="issue">[Win10] Synaptics Startup Program in Windows 10 in comparison with Windows 8.1  </td>
+<td class="issue">Remove run key if we use service to launch enhancement for all windows; Remove run key to start up SynLenovoHelper.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.22
+
+Date: 08-20-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30565  </td>
+<td class="issue">Iris V19.0.15.2 UX issues  </td>
+<td class="issue">Two Fingers Click for Shortcut Menu Check on GUI is enabled by default in WIn10.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30618  </td>
+<td class="issue">Cannot do the 2finger horizontal scrolling on Store app  </td>
+<td class="issue">Use touch-injection to fix two issues. 1. Cannot do the 2finger horizontal scrolling on Store app. 2. 2finger scrolling on Photo is too fast and hard to control the speed.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30632  </td>
+<td class="issue">Same version of the driver does not have the same GUI on different platforms.  </td>
+<td class="issue">Enable zigzag, navigation GUI by default.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.21
+
+Date: 08-13-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30303  </td>
+<td class="issue">Please add localized help message for Windows 10 3F and 4F gestures  </td>
+<td class="issue">Fix "Maximum" and "Minimum" translations in Windows 10 gestures
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30339  </td>
+<td class="issue">Fail to uninstall driver from Win10 Settings: Apps & Features  </td>
+<td class="issue">Add  detailed driver unstallation to the log log; Get original install dir of synpd oem inf to the log
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30474  </td>
+<td class="issue">Button comb box is not greyed out in PTP mode  </td>
+<td class="issue">Greyed out buttons combbox when the TP is switched to PTP.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30121  </td>
+<td class="issue">[Dell_Marble Falls] Click and tap functions will abnormal and trigger "Alt + Double click (tap)" or "Shift + click (tap)" after executed diagnostic page.  </td>
+<td class="issue">Do not disable KB port.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30463  </td>
+<td class="issue">Remove DLL052E cuz it impact WU and it is for Spyder not our touchpad  </td>
+<td class="issue">Remove DLL052E cuz it impact WU and it is for Spyder not our touchpad?
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.20
+
+Date: 08-06-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30458  </td>
+<td class="issue">Turn off ALT+SHIFT+L to dump log file by default  </td>
+<td class="issue">Turned off using "ALT+SHIFT+L" to collect a log file because it affect some apps which use these hot key.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.19
+
+Date: 07-30-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30170  </td>
+<td class="issue">Marking resources as non-discardable  </td>
+<td class="issue">Marking resources as non-discardable
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30268<br>(1197171)  </td>
+<td class="issue">1197171  - FNC_PE_ /Aria & Venetian: In the drop down box of Button Action (Button /Zone completely disabled) repeat on Touchpad (TouchStyk) tab   </td>
+<td class="issue">Fixed plugin action list item repeat issue when there is only one plugin action; Removed all plugin actions for LRM buttons.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30339  </td>
+<td class="issue">Fail to uninstall driver from Win10 Settings: Apps & Features  </td>
+<td class="issue">Add unstallation log ton Synaptics.PD.log; Hide command prompt windows in installation; Hide command prompt windows which remove SynTPEnhService in uninstallation; Add  last step in finish install lon Synaptics.PD.log; Fixed cannot uninstallation driver from Win10 - Settings - Apps & features
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30281  </td>
+<td class="issue">Cedar: Disable navigation in the button zone does not work under certain conditions  </td>
+<td class="issue">Disable navigation in the button zone should work when multi-finger gestures is disabled.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.18
+
+Date: 07-23-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30262  </td>
+<td class="issue">Use major version for HID/I2C in miniport driver  </td>
+<td class="issue">Changed FW version report format in miniport HID descriptor, for HID/I2C platform only major version is used, for InterToutch the version formation is major(8-bit).minor(8-bit).
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30270  </td>
+<td class="issue">Set ShareVector to TRUE which allows IRQ sharing in SMB  </td>
+<td class="issue">Set ShareVector to TRUE which allows other devices sharing interrupt with SMB.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30271  </td>
+<td class="issue">Report max finger report count the same as FW in HID so we can support reported fingers less than 5  </td>
+<td class="issue">Reported max finger report what FW reports instead of hard coded 5 in miniport driver HID descriptor so we can support less than 5 fingers.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30033  </td>
+<td class="issue">OAK-Rotate setting can't be saved first time when check it.  </td>
+<td class="issue">Ignore "0x7E" scan code. For some devices witout LED feature, driver gets "0x007E" scan code after sending "97 04/05" command to EC. Touchpad will be suppressed by "0x007E" scan code. However, we can't remove LED feature on the device witout LED feature because the same HWID is used on the device with LED feature.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30186  </td>
+<td class="issue">Dell ADC Latitude E5450 retrofit (TP only, no stick) issues  </td>
+<td class="issue">Enable feature that keep suppressing cursor if finger down during inertia scrolling.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.17
+
+Date: 07-17-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-30055  </td>
+<td class="issue">Improve SMB data read performance  </td>
+<td class="issue">Combined F01 read with partial F11 and skipped F11 relative and gesture data for SMB so we can reduce SMB bus traffic.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30149  </td>
+<td class="issue">Un-installation is not clean at the registry and C:\Program Files  </td>
+<td class="issue">Prevent restart too early in uninstallation
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30171  </td>
+<td class="issue">Report real FW version through miniport driver instead of hard coded 0  </td>
+<td class="issue">Reported real FW version through miniport driver to OS for miniport driver PTP.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29709  </td>
+<td class="issue">[Dell_Win10] Four fingers (4F) tap sometimes will triggered Cortana.  </td>
+<td class="issue">Set palmdetect flag to ignore palm violation for Multifinger taps; rename a PalmDetect flag.; Improve Multifinger taps; Improve MF taps by adjusting some tap related conditions.; lower touch threshold for 3Finger and 4Finger gestures; Improve Multifinger taps: ignore Edge Palm violation; Make MF taps to be decoded easier.; [linux] fix break.; Set Ignore PalmViolation for MF taps as default.; Improve MF-taps and clicking for ForcePad by not calculate force for Multifinger on pad.; Do not set double-tap or drag for MF taps
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30123  </td>
+<td class="issue">[Dell_Win10] Dell Pointing Devices can't keep custom setting values after upgraded driver.  </td>
+<td class="issue">Keep user setting values when upgrading driver
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30192  </td>
+<td class="issue">DELLWPF_RMIHID: TP no function after lid-open in 19.0.9.4  </td>
+<td class="issue">Remove DetectForceCompatibilityMode setting.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30200  </td>
+<td class="issue">PS2 WheelMouse pointing is not working  </td>
+<td class="issue">Fixed Mouse relative packet mode issue.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.16
+
+Date: 07-09-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29834  </td>
+<td class="issue">Add a new control type  </td>
+<td class="issue">Add a new control type ToggleSwitch.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30055  </td>
+<td class="issue">Improve SMB data read performance  </td>
+<td class="issue">Combined F01 read with partial F11 and skipped F11 relative and gesture data for SMB so we can reduce SMB bus traffic.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30081  </td>
+<td class="issue">Dynamically create HID descriptor based on TouchPad type  </td>
+<td class="issue">Create HID descriptor based on TouchPad type either report 3 buttons or 1 button for miniport driver.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28478  </td>
+<td class="issue">Dell RedWood B & MLK "Pinch Zoom" function is not sensitivity and lag while doing two finger pinch zoom gesture by Firefox web browser.  </td>
+<td class="issue">Enable touch-injection on firefox web browser.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28619  </td>
+<td class="issue">DELLWPF_RMIHID: TP button no function after resuming from CB without external mouse connected  </td>
+<td class="issue">TP button should be enabled after removing a USB mouse.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29772  </td>
+<td class="issue">DELLWPF: reverse scrolling direction not working with Inertial scrolling disabled in W8.1 Reader APP on Echo15/17  </td>
+<td class="issue">The direction of 2 finger scrolling can't be changed when apply the touch-injection. Fix it.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29884  </td>
+<td class="issue">[Dell_Win10] Two Finger (2F) tap can't triggered shortcut menu after enabled "Two Finger Click for Shortcut Menu" option.  </td>
+<td class="issue">In Win10, disable "2F tap/2F click" setting by default and disable .; In Win10, enable 2F tap setting by default.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30022  </td>
+<td class="issue">[Dell_Win10] BSOD and error: DPC_WATCHDOG_VIOLATION occurred after resumed from S3 / Sleep. (Failure rate 2/10)  </td>
+<td class="issue">Fixed DPC_WATCHDOG_VIOLATION error after sleep/resume on Win10.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30030  </td>
+<td class="issue">Latitude OAK 15 that the touchpad cannot be disabled by hot key Fn+F3  </td>
+<td class="issue">Adjust hot key setting for Latitude OAK 15.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-30099  </td>
+<td class="issue">[Dell_Win10] "Pinch Zoom" function is not sensitivity and lag while doing two finger pinch zoom gesture.  </td>
+<td class="issue">1. Enable touch-injection feature on some projects. 2. Fix wrong setting.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.15
+
+Date: 07-02-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29725  </td>
+<td class="issue">Driver package to deprecate SynReflash tool from manifest  </td>
+<td class="issue">SynReflash will only be included in driver package if specified
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29885  </td>
+<td class="issue">Twist rotate is no function  </td>
+<td class="issue">Add Rotation support for Microsoft Window Photos App for win10
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29964  </td>
+<td class="issue">Branch Build Request v19.0.14.x ( _UltraNav_HidMini.inf)  </td>
+<td class="issue">Changed ACM confidence value to zero to allow using FW reported contact type and ignore confidence value if the slider is in the last slot.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Add "Windows 10" setting into Dell MUP.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29876  </td>
+<td class="issue">  DELLWPF: 3F swipe not sensitive on AW15/17  </td>
+<td class="issue">Improve 3F swipe performance in on AW15/17.; [ ] Improve 3F swipe performance in on AW15/17.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.14
+
+Date: 06-25-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28998  </td>
+<td class="issue">Video for Windows 10 3F flick.  </td>
+<td class="issue">Added videos for Windows 10 3F gestures
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29312  </td>
+<td class="issue">Redwood Braswell - Unsmooth scrolling/Pitch zoom gesture performance on Spartan  </td>
+<td class="issue">Improve scrolling/Pitch zoom gesture performance on Spartan
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29771  </td>
+<td class="issue">DELLWPF_RMIHID: GUI tranlation not complete on Echo13  </td>
+<td class="issue">Fix spelling of "Swipe"
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29772  </td>
+<td class="issue">DELLWPF: reverse scrolling direction not working with Inertial scrolling disabled in W8.1 Reader APP  </td>
+<td class="issue">The direction of 2 finger scrolling can't be changed when apply the touch-injection. Fix it.; Apply touchinjection and enable "zoom in/out" and "2F scrolling" gesture in Microsoft Metro Window Reader.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29876  </td>
+<td class="issue">  DELLWPF: 3F swipe not sensitive on AW15/17  </td>
+<td class="issue">Improve 3F swipe performance in on AW15/17.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.13
+
+Date: 06-18-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29759  </td>
+<td class="issue">Please show FW version while query information in SynReflash   </td>
+<td class="issue">Fixed SynReflashPkg fail while image size over USHORT; Show FW version while query information under console
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Rename reflash packager.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28843  </td>
+<td class="issue">DELLWPF_RMIHID: GUI edge not symmetric in Win10  </td>
+<td class="issue">Fix "GUI edge not symmetric" issue in Win10.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29396  </td>
+<td class="issue">Iris Braswell - Touchpad no function when idle after S4 long run  </td>
+<td class="issue">After we force to RMI mode, we have to enable RMI interrupt because FW disables the RMI interrupt every time if the driver swithces mode from 0 to 1 (RMI mode).
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.12
+
+Date: 06-11-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29609  </td>
+<td class="issue">Missing ACM2 data when converting secondary finger packet to primary finger.  </td>
+<td class="issue">Moved ACM 2 data from secondary finger packet to primary finger packet when the packet is converted to raw packet.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29638  </td>
+<td class="issue">BSOD when pressing any key  </td>
+<td class="issue">Fixed  BSODs.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29671  </td>
+<td class="issue">Remove sticky border control from all UIs  </td>
+<td class="issue">Removed sticky border feature from all control panel since this feature is rarely used by end users and also the driver cannot detect windows border correctly every time when there is a new OS release so we decided to remove this feature.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29397  </td>
+<td class="issue">DELLWPF_RMIHID: double click not working on Pandora HSW  </td>
+<td class="issue">1. Reduce click debounce time to 8ms.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29554  </td>
+<td class="issue">    DELLWPF: 4F tap not sensitive on AW15/17  </td>
+<td class="issue">Change "Palm Detect" Config.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.11
+
+Date: 06-04-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29039  </td>
+<td class="issue">Video & Descrption for Windows 10 3F Swipe  </td>
+<td class="issue">New UI translations for Windows 10; New Windows 10 Translations for Enhancement
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.10
+
+Date: 05-28-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29283  </td>
+<td class="issue">SynReflashPkg need to support more informations  </td>
+<td class="issue">Add packrat ID into file property while use SynReflashPkg to pack image and cfg
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29353  </td>
+<td class="issue">Change featurescore to 0xF9 per MS recommendation  </td>
+<td class="issue">Changed FeatureScore to 0xF9
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.9
+
+Date: 05-21-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-29353  </td>
+<td class="issue">Change featurescore to 0xF9 per MS recommendation  </td>
+<td class="issue">Changed FeatureScore to 0xF9
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Update DriverName to the one with UUID appends.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Correct the typo.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Delete current user setting after windows upgrate.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29332  </td>
+<td class="issue">[Dell_Win10] "Double click" and "Run" of Right / Left button actions can't be triggered.  </td>
+<td class="issue">Modify Win10 setting.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.8
+
+Date: 05-14-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-10618  </td>
+<td class="issue">SynCOM samples have errors and warnings when compiling  </td>
+<td class="issue">mfctest; keypad; cPadClock; cPadImage; Disabler; Comtest; DisableGesture; SynDrumPad; BezelTest; SynWrapSample; SynPlot; SynDrumPad take out from SDK since it depends srd party library DirectX; SynView; SynForcePad; Dpn't include build bat files
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-13375  </td>
+<td class="issue">Remove LAPACK copyright info  </td>
+<td class="issue">Copyright 2014 to 2015; Remove LAPACK copyright info
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28137  </td>
+<td class="issue">Un-installation driver is not clean  </td>
+<td class="issue">Use %ProgramFiles%\Synaptics\SynTP as temp dir to install auxiliary drivers instead of creating temp dirs in %ProgramData%
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29104  </td>
+<td class="issue">Change driver package name from SynARP  </td>
+<td class="issue">Update OS support information in SynPD.inf
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-26997<br>(FM: 2259)  </td>
+<td class="issue">This is a placeholder for build generated checkins.  </td>
+<td class="issue">Update ReleaseNotes.html
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Consolidate DellWPF Win10 setting.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29176  </td>
+<td class="issue">PnPID request: Pandora refresh  </td>
+<td class="issue">Add PnPID for Pandora refresh.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Porting from branch to trunk.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.7
+
+Date: 05-08-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28137  </td>
+<td class="issue">Un-installation driver is not clean  </td>
+<td class="issue">Un-installation driver is not clean - remove old SynTPCoInstaller; Use %ProgramFiles%\Synaptics\SynTP as temp dir to install auxiliary drivers instead of creating temp dirs in %ProgramData%; Always overwrite Coinstaller in update install
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28874  </td>
+<td class="issue">Incorrect ASIC Displayed in Diagnostics Window  </td>
+<td class="issue">Get correct ASIC type from F01 query 19.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29080  </td>
+<td class="issue">Suppress Tap on Top Left Corner for SecurePad  </td>
+<td class="issue">Added code to suppress tap in the SecurePad notch area.; Checked whether query41 exists to find right offset for query43.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29102  </td>
+<td class="issue">Update control panel to disable top left corner tap zone from UI  </td>
+<td class="issue">Hidden top left tap zone controls from the control panel.; Fixed a compiling error.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-29103  </td>
+<td class="issue">Update device type to SecurePad for SecurePad in the CPL to refer the device type  </td>
+<td class="issue">Updated device type to SecurePad in the CPL to refer the device type for SecurePad
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28962  </td>
+<td class="issue">Dell Win 10 non PTP driver Request  </td>
+<td class="issue">Enable Win10 PTP multi-fingers features on MTP device. Re-layout DellWPF UI for Win10 and wait for Dell's Win10 UI spec.; Enable Win10 PTP multi-fingers features on MTP device.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.6
+
+Date: 04-30-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28622  </td>
+<td class="issue">Tap zones can't work on the top right and top left corner  </td>
+<td class="issue">Allowed tap if a finger is in tap zone and object type is non-finger and tap zone is enabled.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28913  </td>
+<td class="issue">Return code=-1  </td>
+<td class="issue">Fixed return code for setup
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28962  </td>
+<td class="issue">Dell Win 10 non PTP driver Request  </td>
+<td class="issue">Enable Win10 PTP multi-fingers features on MTP device. Re-layout DellWPF UI for Win10 and wait for Dell's Win10 UI spec.; Rollback the Win10 PTP multi-fingers feature.; We should be able to trigger 3 finger flick gesture no metter how long the fingers rest on the touchpad.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.5
+
+Date: 04-23-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28907  </td>
+<td class="issue">Correct Finger Packet State not for all fingers in a group but for those who are really in the zones   </td>
+<td class="issue">Correctly update Finger Packet State not for all fingers in a group but for those who are really in the left/right/resting zones
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28944<br>(676644)  </td>
+<td class="issue">[Microsoft Windows 10 Team] [DeviceCompat][HID][CUET] : The check box setting "Disable internal pointing device..." in mouse properties under clickpad tab doesn't get applied.  </td>
+<td class="issue">Fixed checkbox out of sync issue when there are two tabs in the control panel such as Show tray icon in the taskbar or disable internal pointing device when external USB pointing device is attached.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.4
+
+Date: 04-16-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28295  </td>
+<td class="issue">Please remove  Left/Right Edge Swipe from UI since Win 10 doesn't support this gesture  </td>
+<td class="issue">Remove Left/Right Edge Swipe from UI since Win 10 doesn't support this gesture.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28853  </td>
+<td class="issue">Dell Spyder: in Win10, GUI should show "activate touchpad by zigzag"  </td>
+<td class="issue">Only add Dell five star feature into group 2 and group 4. Add Dell five star feature into Dell common setting.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.3
+
+Date: 04-09-2015</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.2
+
+Date: 04-02-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28731  </td>
+<td class="issue">Add FeatureScore for all OEM INFs.  </td>
+<td class="issue">Fixed build errors.; Added FeatureScore in INF so OEM driver is always picked by WU first so the generic driver can be overridden  in WU.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28736  </td>
+<td class="issue">Change SMBus mode switch retry to zero  </td>
+<td class="issue">Removed SMBus mode switch retry from SwitchMode because there is a retry logic in the low level driver (retry 16 times).
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.1
+
+Date: 03-26-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28581  </td>
+<td class="issue"> Dell Plano-M - v18.2.3 - DellWPF.inf - Scrolling some time does not control in Chrome browser   </td>
+<td class="issue">Touch-inject feature doesn't work on specific page of Chrome browser. Disable touch-inject feature in Chrome browser.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28581  </td>
+<td class="issue"> Dell Plano-M - v18.2.3 - DellWPF.inf - Scrolling some time does not control in Chrome browser   </td>
+<td class="issue">Touch-inject feature doesn't work on specific page of Chrome browser. Disable touch-inject feature in Chrome browser.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28619  </td>
+<td class="issue">DELLWPF_RMIHID: TP button no function after resuming from CB without external mouse connected  </td>
+<td class="issue">Oringial logic, SynTPCpl will check device state before configure "TP_EnableButtonAction". However, the referred member variable will also be update in other place. Sometimes, SynTPCpl will not update "TP_EnableButtonAction" with right situation. Change the referrence info to make it right.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  19.0.0
+
+Date: 03-19-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28484  </td>
+<td class="issue">Create miniport driver INF for major customers.  </td>
+<td class="issue">Created miniport driver installation package for major ciustomers.  1, Added plugin registries back fir miniport driver, otherwise synthenh cannot be launched. 2, Always created OSD class instead of enabling by registry because OSD is used several placec, if this registry is missing, the syntpenh will crash.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28488  </td>
+<td class="issue">Gesture and Pointing performance improvement  </td>
+<td class="issue">1, Fixed memory leakage when the miniport driver is disabled or removed. 2, Fixed the miniport driver is disabled when any USB mouse is unplugged from USB ports. 3, Reported to PTP using  normalized X, Y instead of filtered X, Y.;  Fixed 1palm+1F failure issue if palm is down first, 1F is down second, then palm is up, the pointing does not work any more. We should fill in finger data one by one from array index 0, should no gap between finger data..
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-937  </td>
+<td class="issue">Dell FW update tool follow MUP  </td>
+<td class="issue">Customize SynReflash tool for Dell mup.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.2.3
+
+Date: 03-12-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28484  </td>
+<td class="issue">Create miniport driver INF for major customers.  </td>
+<td class="issue">Created miniport driver installation paclage for major ciustomers.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Modify component ID by Dell's request.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-937  </td>
+<td class="issue">Dell FW update tool follow MUP  </td>
+<td class="issue">Customize SynReflash tool for Dell mup.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.2.2
+
+Date: 03-06-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28341  </td>
+<td class="issue">Review all INFs to add HID/ACPI before PnP IDs  </td>
+<td class="issue">Per Win10 WU we have to add ACPI before PnP IDS isntead of *.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28289  </td>
+<td class="issue">Plano M & B  </td>
+<td class="issue">Changed default double tap speed to match MS default value so the double tap speed control slider can be at the center for Dell UI.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.2.1
+
+Date: 02-27-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28295  </td>
+<td class="issue">Please remove  Left/Right Edge Swipe from UI since Win 10 doesn't support this gesture  </td>
+<td class="issue">Removed edge swipe UI from Dell driver.
+</td>
+</tr>
+<tr>
+<td class="td">
+PRJ-35549  </td>
+<td class="issue">Find a solution to enable SMB driver update for specific PnP in WU  </td>
+<td class="issue">Enable SMB driver update for specific PnP in WU
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.2.0
+
+Date: 02-19-2015</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.53
+
+Date: 02-12-2015</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.52
+
+Date: 02-05-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28175  </td>
+<td class="issue">Hide all edge swipe controls for Win10  </td>
+<td class="issue">Hidden edge swipe controls from CPL for Win10.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-28189  </td>
+<td class="issue">Add Intel SkyLake chipset support in SMB INF  </td>
+<td class="issue">Added Intel Skylake chipset support for SMBus.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.51
+
+Date: 01-29-2015</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.50
+
+Date: 01-22-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28039  </td>
+<td class="issue">TouchPad should be enabled after checked "Disable internal pointing device when external USB pointing device is attached" then unplugged external USB mouse.  </td>
+<td class="issue">Fixed the USB mouse plugin/unplugin disable/enable issue, the notification reason is changed, it does not match with user mode driver, so the event is not processed by the user mode driver.,
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.49
+
+Date: 01-15-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-27915  </td>
+<td class="issue">Cedar 15" - Scroll speed change setting while open IE and don't minimize the windows then set system go to S3/S4  </td>
+<td class="issue">Don't add scroll speed in the specific applcation. It may cause different scroll speed value in some application. We should use speed delta to adjust scroll speed.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.48
+
+Date: 01-08-2015</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-27930  </td>
+<td class="issue">Disable audio feedback for button clicking  </td>
+<td class="issue">Read ForcePad click sound mute status from registry..
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-27844  </td>
+<td class="issue">DELLWPF: driver setting is default but affected by previous user  </td>
+<td class="issue">Use disablekey to replace PseudoSuspendDisableKey. When logging other account, driver setting will not be affected by previous user.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-27854  </td>
+<td class="issue">Plano - Sometimes, touchpad is no function to do double click  </td>
+<td class="issue">When double clicking too fast on left/right button, clicking feature will be suspended by debounce time. Reduce debounce time to improve it.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue"> : [ADC] Fix in synarp instead of hardcoded here.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.47
+
+Date: 12-25-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Fine tune the width of edge swipe according to Plano device "HIN-61". Measure 2.5mm and modify the width of edge swipe to meet Dell five star.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.46
+
+Date: 12-18-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-913<br>(Hyder001)  </td>
+<td class="issue">Using force data to reduce false taps working with ACM  </td>
+<td class="issue">Ignored tap decoding if force is less than certain threshold.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-2392  </td>
+<td class="issue">DELLWPF_RMIHID: cursor freezes sometimes in win7  </td>
+<td class="issue">In PS2, there is a case that FW will big diff position packet within primary packet format during the whole stroke. It might due to some FW issue to generate this kind of packets. With this kind of scenario, driver will treat it as finger swap and process it with another filter. Originally, driver will send dribble packet to emulate finger up by FW report finger count(2->1). But this case, FW will only report 1 Finger during whole stroke. Add another checking to emulate finger up.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-909  </td>
+<td class="issue">Dell Tulip AMD: Change PnPID (DELLWPF.inf)  </td>
+<td class="issue">Move DLL06BF, DLLB6BF, DLL06BD, DLLB6BD from DellWPF to DELLWPF_RMIHID. Dell hopes to use the same driver in Tulip series.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.45
+
+Date: 12-11-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-27746  </td>
+<td class="issue">Add more log information in the driver  </td>
+<td class="issue">Logged ForceModel reset event.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.44
+
+Date: 12-05-2014</strong></div><br><br>
+<br> System enhancements<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.43
+
+Date: 11-26-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-604  </td>
+<td class="issue">Iris - A little hard to trigger edge swipe  </td>
+<td class="issue">A little hard to trigger edge swipe
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-842  </td>
+<td class="issue">DELLWPF 18.1.34.36: high failure rate on edge swipes feature   </td>
+<td class="issue">A little hard to trigger edge swipe
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.42
+
+Date: 11-20-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-399  </td>
+<td class="issue">Dell MUP update to v2.4.3  </td>
+<td class="issue">Add two mup settings for "PS2+I2C" and "PS2+SMB". Modify the format for MUP 2.4.3.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.41
+
+Date: 11-14-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-399  </td>
+<td class="issue">Dell MUP update to v2.4.3  </td>
+<td class="issue">Update DellMUP to v2.4.3
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">MUPv2.4.3
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.40
+
+Date: 11-07-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-621  </td>
+<td class="issue">Iris - BITS175682 Iris_BTM - After turn off TP in TP settings, "Gestures" button on GUI is still on  </td>
+<td class="issue">Keep old Dell UI design. After turn off TP in TP settings, don't change "Gestures" button on GUI.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.39
+
+Date: 10-31-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-626<br>(ECR232511)  </td>
+<td class="issue">Unqouted Service Path in Registry with SynTPEnhServic  </td>
+<td class="issue">add quotes to Service's ImagePath in Registry
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-633  </td>
+<td class="issue">Murcielago ULT - UI cannot be updated after enabling touchpad  </td>
+<td class="issue">UI cannot be updated after enabling touchpad.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.38
+
+Date: 10-24-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-624  </td>
+<td class="issue">Make DPI aware default disabled  </td>
+<td class="issue">Make DPI aware
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-65  </td>
+<td class="issue">TouchPad doesn't work for a time after detaching external USB mouse  </td>
+<td class="issue">Fixed TouchPad does not work after detaching external mouse
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Show "disable" icon or "enable" icon on the screen after receiving PseudoSuspendEnableKey or PseudoSuspendIisableKey.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-534  </td>
+<td class="issue">DellWPF_RMIHID - Add "Enable touchpad by zigzag gesture" and "one finger top edge swipe"  </td>
+<td class="issue">Enable zigzag check box and disable the "zigzag" gesture by default.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.37
+
+Date: 10-17-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-511  </td>
+<td class="issue">Pinch does not work in ForceTutorial app  </td>
+<td class="issue">Fixed wrong cursor position when DPI aware is enabled in syntpenh, that caused pinch or scrolling does not work if it uses wheel mouse message and the system is not in 96dpi.  Called right function to window handle under pointer to fix wrong window handle which causes pinch does not work in ForcePad Tutorail app.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-246  </td>
+<td class="issue">DELL Echo15/17: left/right edge swipe no function in win8.1  </td>
+<td class="issue">In DELL Echo15/17, set 7mm for edge swipe criteria after discussing with DELL UX Ping.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-497  </td>
+<td class="issue">DELLWPF: Palm sliding on TP with zig-zag motion should not enable TP  </td>
+<td class="issue">Palm sliding on TP with zig-zag motion should not enable TP.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.36
+
+Date: 10-09-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-48060  </td>
+<td class="issue">Please help to check whether 1F vertical scrolling is enabled by default  </td>
+<td class="issue">Fixed "Rotate" in Danish
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.35
+
+Date: 10-02-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-28  </td>
+<td class="issue">[3+2BCP] 3F swipe not working on Metro Photo Application  </td>
+<td class="issue">Make 3F swipe working in Metro Photo Application
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-411  </td>
+<td class="issue"> Powerpoint 2013 will be Grayed when using finger to Horizontal scrolling  </td>
+<td class="issue">Used key scroll instead of bar scrolling for PowerPoint to fix "Powerpoint 2013 will be Grayed when using finger to Horizontal scrolling".
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-381  </td>
+<td class="issue">DellWPF_RMIHID.inf - 18.1.33 build - Uninstall drivers does not close the control panel UI  </td>
+<td class="issue">When DelWPF UI is closed send message to SynTPEnh
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-381  </td>
+<td class="issue">DellWPF_RMIHID.inf - 18.1.33 build - Uninstall drivers does not close the control panel UI  </td>
+<td class="issue">Close DelWPF UI when SynTPEnh is detached (also in uninstallation)
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.34
+
+Date: 09-25-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-246  </td>
+<td class="issue">DELL Echo15/17: left/right edge swipe no function in win8.1  </td>
+<td class="issue">In DELL Echo15/17, set 7mm for edge swipe criteria after discussing with DELL UX Ping.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47986  </td>
+<td class="issue">The touchpad image on Dell Touchpad tab is not aligned  </td>
+<td class="issue">The touchpad image on Dell Touchpad tab is not aligned; The touchpad image on Dell Touchpad tab is not aligned
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.33
+
+Date: 09-18-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">In High DPI display setting, Touchinjection(Pinch) somestimes causes touch no function after we call the SetProcessDPIAware. Use the registry to disable this feature. Remove this registry after finding root cause.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-166  </td>
+<td class="issue">DELLWPF: UI change in 18.1.28   </td>
+<td class="issue">Enable zigzag UI for some Dell projects.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-170  </td>
+<td class="issue">DELLWPF: 2-F scrolling not smooth in some APP  </td>
+<td class="issue">Improve 2F scrolling performance in Win7/8.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.32
+
+Date: 09-11-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-264  </td>
+<td class="issue">Audio feedback missed if clicking is too fast and audio playback is too slow  </td>
+<td class="issue">Queued clicking press/release event, then playback audio feedback one by one if the queue is not empty, this fixed clicking sound missing or press/release misorder.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-169  </td>
+<td class="issue">DELLWPF: Three finger swiping up/down is not working   </td>
+<td class="issue">Fix "Three finger swiping up/down" gesture issue.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47986  </td>
+<td class="issue">The touchpad image on Dell Touchpad tab is not aligned  </td>
+<td class="issue">Fixed in "Mouse Properties" panel, on Dell Touchpad tab touchpad image is not aligned in Japanese MUI
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.31
+
+Date: 09-04-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-208  </td>
+<td class="issue">Remove allowing edge swipe if first three packets are palm  </td>
+<td class="issue">Removed old implementation for relaxing palm rejection in the edge fro edge swipe gestures.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-209  </td>
+<td class="issue">Add API to disable/enable suppression motion while typing.  </td>
+<td class="issue">Exposed API to allow an application to disable/enable motion suppression while typing.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-210  </td>
+<td class="issue">Force drag is triggered unexpected  </td>
+<td class="issue">Fix an wrong ForceReleased drag generated by Force-Clciking-releasing without motion before release force.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-227  </td>
+<td class="issue">Relax edge swipe condition in edge if first three packets are palm  </td>
+<td class="issue">Ignored palm check for first three packets if it is edge swipe, this will fix edge swipe missing with large flat finger or very fast edge swipe.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.30
+
+Date: 08-29-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">"Enable" button is not greyed out if the TP is disabled, then plug in USB mouse with "Disable internal pointing device when external USB pointing device is attached" checked.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.29
+
+Date: 08-21-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-73  </td>
+<td class="issue">Customer ask to reduce the trigger edge for 1F edge swipe on Left/Right side  </td>
+<td class="issue">Set L/R edge pulls to 2.5mm =2500
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47703  </td>
+<td class="issue"> Implement 5 Star features on Dell projects  </td>
+<td class="issue">Set L/R edge pulls to 2.5mm =2500
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.28
+
+Date: 08-15-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-6  </td>
+<td class="issue">Dell Testarossa-P - Win7 4F swipe L/R function should be "change tabs in browser"  </td>
+<td class="issue">Use DellWPF 2013 UI and adjust Mult-iFinger Gesture in Win7.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-6  </td>
+<td class="issue">Dell Testarossa-P - Win7 4F swipe L/R function should be "change tabs in browser"  </td>
+<td class="issue">Use DellWPF 2013 UI and adjust Mult-iFinger Gesture in Win7.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48536  </td>
+<td class="issue">DellWPF: cannot disable TP by function key F11   </td>
+<td class="issue">Change "disable/enable" key from E059 to "E001" for Dell Echo 15/17.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.27
+
+Date: 08-07-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+HDR-4  </td>
+<td class="issue">DELLWPF_RMIHID: The square appears on the central of display with non-Aero theme.   </td>
+<td class="issue">Modify OSD setting. Disable OSDTPOnOffNotification and enable OSDTPOnOffNotificationSupported.
+</td>
+</tr>
+<tr>
+<td class="td">
+HDR-8  </td>
+<td class="issue">DELLWPF_RMIHID: Left button of TP is triggered if user pushes palm rest strongly  </td>
+<td class="issue">If no finger bit, don't do a left button click.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47889  </td>
+<td class="issue">Dell Plano - Apply HWID  </td>
+<td class="issue">Add PnPIDs in DellWPF and remove some PnPIDs from DellWPF_RMIHID.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48553  </td>
+<td class="issue">Dell Testarossa-P - Win7: remove "Edge Scroll & Zoom" tab in UI  </td>
+<td class="issue">Use DellWPF Win7 UI 2013 for DLL05FD and DLL05FE.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.26
+
+Date: 08-01-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47891  </td>
+<td class="issue">Quick Launch default setting at the Gestures is different between Chinese Language and English Language  </td>
+<td class="issue">Change the default setting on 3F Quick Launch.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48536  </td>
+<td class="issue">DellWPF: cannot disable TP by function key F11   </td>
+<td class="issue">Change "disable/enable" key from E059 to "E001" for Dell Echo 15/17.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48553  </td>
+<td class="issue">Dell Testarossa-P - Win7: remove "Edge Scroll & Zoom" tab in UI  </td>
+<td class="issue">Use DellWPF Win7 UI 2013.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.25
+
+Date: 07-25-2014</strong></div><br><br>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.24
+
+Date: 07-17-2014</strong></div><br><br>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.23
+
+Date: 07-10-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47650<br>(ECR209588 -> Win7, ECR209586 -> Win8)  </td>
+<td class="issue">UI translation on Chinese Simplified  </td>
+<td class="issue">New translations for the word "Charms" for Windows 8
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48348  </td>
+<td class="issue">SynTPEnh crashes when the driver is uninstalled.  </td>
+<td class="issue">Fixed syntpenh crash when the dirver is uninstalled.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.22
+
+Date: 07-04-2014</strong></div><br><br>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.21
+
+Date: 06-26-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-48242  </td>
+<td class="issue">Remove all short cuts all user when the driver is uninstalled/upgraded.  </td>
+<td class="issue">Remove All users short cuts in uninstallation or before driver update
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48088  </td>
+<td class="issue">DellWPF - Win8 charms bar power shutdown options: moving pointer to select option will close the menu  </td>
+<td class="issue">In Carrera/Panamera (DLL052E, DLL054C, DLL054D, DLL054E, DLL054F) projects, use 686C port to send 97 command.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.20
+
+Date: 06-20-2014</strong></div><br><br>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.19
+
+Date: 06-12-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-48053  </td>
+<td class="issue">The graphic for touchpad disable and enable should be changed  </td>
+<td class="issue">Remove the graphic for touchpad disable and enable.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.18
+
+Date: 06-06-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-48043  </td>
+<td class="issue">Add TM number in configkey  </td>
+<td class="issue">Appended TM number in configkey so we can support multiple TouchPad in the system.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-48031  </td>
+<td class="issue">Marble Falls - Touchpad Will be triggered if not using finger  </td>
+<td class="issue">"Left button" should not be triggered if not using finger.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.17
+
+Date: 05-29-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47656  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID -  " Tap to click " translation in Chinese is not correct  </td>
+<td class="issue">Fix translation of "Tap to Click" in Chinese
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47759  </td>
+<td class="issue">DellWPF -  3F Quick Launch function is not sensitive sometimes  </td>
+<td class="issue">Fixed three finger press is not sensitive sometimes.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47822  </td>
+<td class="issue">Dell - Display will auto turn on when wake from S3 via wake on LAN, but remove Touchpad driver is normal  </td>
+<td class="issue">Disable KBC Notification for PNPID DLL0631, DLL0632
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47886  </td>
+<td class="issue">Redwood HSW - TP has no function when running Quake3/Quake4 without a mouse inserted   </td>
+<td class="issue">Added port type RMIHID in mouse query attributes.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.16
+
+Date: 05-22-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47648<br>(ECR209588 -> Win7, ECR209586 -> Win8)  </td>
+<td class="issue">UI translation on Brazil Portugese  </td>
+<td class="issue">Fix Portuguese translation for "charms" from Windows 8
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47650<br>(ECR209588 -> Win7, ECR209586 -> Win8)  </td>
+<td class="issue">UI translation on Chinese Simplified  </td>
+<td class="issue">Add translated strings for TouchPad Pointing Speed and 3F Swipe; Fix Traditional and Simplified Chinese words for Win8 Charms
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47856  </td>
+<td class="issue">Text "Momentum" is not translated  </td>
+<td class="issue">Restore translation for "Momentum"
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47874  </td>
+<td class="issue">SynForcePad is not working on SMB or HID/I2C system  </td>
+<td class="issue">Modified the connection type in SynForcePad so we can run the demo app on SMB and other platform.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47703  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID -  implement 5 Star features on Dell projects  </td>
+<td class="issue">Added Dell 5 star features.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.15
+
+Date: 05-15-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47801  </td>
+<td class="issue">On simplified Chinese language, the translation for "Pointing Speed" is different from the help file on the General tab  </td>
+<td class="issue">Fix Traditional Chinese translation for "Pointer Speed" help topic
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47860  </td>
+<td class="issue">Spell out FW to Firmware  </td>
+<td class="issue">Spelled out FW VErsion to Firmware Version.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46976  </td>
+<td class="issue">Dell - add a checkbox to enable Zigzag gesture to activate touchpad  </td>
+<td class="issue">Add new Dell string for zigzag gesture
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.14
+
+Date: 05-09-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47799  </td>
+<td class="issue">Set focus on Synaptics device tab  </td>
+<td class="issue">Set focus to Synaptics tab after the CPL is opened.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47814  </td>
+<td class="issue">Top edge zone size is wrong  </td>
+<td class="issue">Top edge swipe zone size is wrong, whole TP is top edge swipe zone, this causes tue cursor cannot be moved vertically.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47815  </td>
+<td class="issue">Change FW version display format for HID device  </td>
+<td class="issue">Changed FW version display format for HID device from major.minor to an integer.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47657  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - translation of license agreement text when installing driver in Chinese is not correct  </td>
+<td class="issue">Restore simplified Chinese wording in EULA; Fix Simplified Chinese EULA
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47759  </td>
+<td class="issue">DellWPF -  3F Quick Launch function is not sensitive sometimes  </td>
+<td class="issue">Fixed 3 finger quick lanch fail issue.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.13
+
+Date: 05-01-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47599  </td>
+<td class="issue">DellWPF: Inertial Scrolling function is unstable in Office and Internal Reader APP  </td>
+<td class="issue">use touch injection for scrolling in Reader and Word.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47703  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID -  implement 5 Star features on Dell projects  </td>
+<td class="issue">Added Dell 5 star features in main branch.; 5 star features.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.12
+
+Date: 04-25-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46983  </td>
+<td class="issue">Alienware 13/15/17- apply PnPID  </td>
+<td class="issue">Alienware 15/17- apply PnPID
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47575  </td>
+<td class="issue">Alienware 13/15/17: change UI from SYNA to DELL  </td>
+<td class="issue">Alienware 15/17- apply PnPID; Alienware 13: change UI from SYNA to DELL
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47628  </td>
+<td class="issue">Redwood - There is fail rate that sometimes cannot do 2F scrolling while one finger lift   </td>
+<td class="issue">2 finger scrolling delta calculation should consider 2nd finger
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47645  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - UI should say "Zoom" and not "Pinch Zoom"  </td>
+<td class="issue">Change UI setting from "Pinch Zoom" to "Zoom".
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47654  </td>
+<td class="issue">DellWPF_RMIHID: V18.0.5.9-Two finger tap has function when two finger click for shortcut menu disabled  </td>
+<td class="issue">The "2 finger click for shortcut menu" checkbox will control both 2 finger click and 2 finger tap, so we shouldn't set one action enabled and one aciton disabled if the control is disabled(unchecked).
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.11
+
+Date: 04-18-2014</strong></div><br><br>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.10
+
+Date: 04-10-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Fixed TP lost function after this power sequence s3->s4->resume.resume from s4, then resume
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47469  </td>
+<td class="issue">DellWPF V18.1.6: a notification of TP enable shown when lid open   </td>
+<td class="issue">Don't show enable/disable TP icon when lid open/close.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47561  </td>
+<td class="issue">DellWPF_RMIHID: Put two finger on TP but no function is working in Win7.   </td>
+<td class="issue">Change the "2F tap" setting from "One finger tap" to "shortcut menu".
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.9
+
+Date: 04-03-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Prevent unnecessary registry reads if stick device is not present.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47221  </td>
+<td class="issue">Cursor gets stuck inside Application's border   </td>
+<td class="issue">Fixed "Sticky Border" option (in Accessibility options) so that the cursor is not stuck inside application's border after the application is closed.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47335  </td>
+<td class="issue">DellWPF & DellWPF_RMIHID - Win8.1 Disable Top Edge Swipe and hide checkbox in UI  </td>
+<td class="issue">Disable Top Edge Swipe and hide checkbox in UI
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47497  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - Set left/right edge swipe zone defaults to 2500 (2.5mm)  </td>
+<td class="issue">Set right / left edge swipe zone size to 2500 mm.; Set right / left edge swipe zone size to 2500 mm.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.8
+
+Date: 03-27-2014</strong></div><br><br>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.7
+
+Date: 03-21-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46951  </td>
+<td class="issue">Remove setting remote control region register for AMD SMB driver  </td>
+<td class="issue">Don't touch other bits of ASF_IO index 0x15 register, otherwise ASF does not work after S3/S4/S5.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Added button state in packet when momentum was stopped otherwise drag was dropped after momentum if the button is still down.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Greyed out some controls in main page if the device is disabled.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47351  </td>
+<td class="issue">Dell Marble Falls - 2F scroll speed slider is set at default to maximum - should be in the middle  </td>
+<td class="issue">Remove Adjust2FScrollSliderScale_AddReg setting.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.6
+
+Date: 03-13-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46976  </td>
+<td class="issue">Dell - add a checkbox to enable Zigzag gesture to activate touchpad  </td>
+<td class="issue">Merge in trunk. Add a checkbox to enable Zigzag gesture feature for DLL0631, DLL0632, DLL0641 and DLL0642.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47279  </td>
+<td class="issue">Dell Marble Falls - Win 7 should not show "Edge Scroll & Zoom" tab in UI  </td>
+<td class="issue">Hid "Edge Scroll & Zoom" tab in Win7 UI for DLL0631 and DLL0632
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.5
+
+Date: 03-06-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46388  </td>
+<td class="issue">DellWPF (Marble Falls) - Touchpad on/off" icon display in Touchpad UI can't  synchronous with display on task bar  </td>
+<td class="issue">Remove DellWPFUI_Win7_UI_2013_AddRegWithoutUIStyle and use DellWPFUI_Win7_UI_2013_AddRegWithoutUIStyle_AddReg.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47013  </td>
+<td class="issue">Marble Falls - Cursor cannot move while finger moved quickly  </td>
+<td class="issue">Modify "KBCNotifyConfig"  setting for Marble Falls.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.4
+
+Date: 02-27-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47170  </td>
+<td class="issue">customer report filter activation time is in 0/6, correct setting should be in 2/6  </td>
+<td class="issue">Modified PalmCheck filters registry path to get settings for either ACM1 or ACM2.0.; Set advanced filter timeout to notch 2 (1sec).
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47045  </td>
+<td class="issue">Dell Maple AMD: right button no function after installed TP driver   </td>
+<td class="issue">Modify registry setting for Maple AMD(HWID:DLL067F).
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.3
+
+Date: 02-21-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-47089  </td>
+<td class="issue">DellWPF V18.1.2: no function with "lock computer” of Quick Launch option.  </td>
+<td class="issue">Changed DLL0667's setting as DLL05E9's.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.2
+
+Date: 02-13-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46939  </td>
+<td class="issue">Dell Marble Falls - L/R buttons not sensitive  </td>
+<td class="issue">Modify the registry setting for Marble Falls.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46984  </td>
+<td class="issue">OAK MLK- Apply PnPID DLL0667  </td>
+<td class="issue">Apply PnPID DLL0667 for OAK MLK.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46989  </td>
+<td class="issue">Cedar/Janus AMD - Default settting is wrong on 3F quick launch  </td>
+<td class="issue">Change default value to 3F gesture quick launch to 'default web'
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-47013  </td>
+<td class="issue">Marble Falls - Cursor cannot move while finger moved quickly  </td>
+<td class="issue">Modify the registry setting for Marble Falls.
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+<br>
+<div id="version"><div id="header"><strong>Version:  18.1.1
+
+Date: 02-07-2014</strong></div><br><br>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46388  </td>
+<td class="issue">DellWPF (Marble Falls) - Touchpad on/off" icon display in Touchpad UI can't  synchronous with display on task bar  </td>
+<td class="issue">fix a TYPO; Remove UIStyle and 4FLRAlterTip registry for Marble Falls.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46972  </td>
+<td class="issue">Request for PNPID - Dell Pandora  </td>
+<td class="issue">Add PNPid for DLL0680 and DLL0681
+</td>
+</tr>
+</tbody></table>
+<div id="footer">
+</div>
+</div>
+
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.1.0
+
+
+Date: 01-30-2014
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46951  </td>
+<td class="issue">Remove setting remote control region register for AMD SMB driver  </td>
+<td class="issue">Removed unnecessary code to change the slave address of AMD SMB controller1 for ASF, this caused NIC fails to talk with SMB ASF.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46387  </td>
+<td class="issue">DellWPF (Marble Falls) - After launch touchpad UI, it will show blank before opened .  </td>
+<td class="issue">Fixed a 'white' background would be shown when lauching touchpad UI at the first time.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46784  </td>
+<td class="issue">Dell Marble Falls - 3F Swipe up/down no function  </td>
+<td class="issue">Modify the registry for Windows 8.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.9
+
+
+Date: 01-23-2014
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46785  </td>
+<td class="issue">Cedar/Janus AMD - Synaptic TP driver cannot be install  </td>
+<td class="issue">Add HWID for Cedar/Janus AMD
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.8
+
+
+Date: 01-16-2014
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46388  </td>
+<td class="issue">DellWPF (Marble Falls) - Touchpad on/off" icon display in Touchpad UI can't  synchronous with display on task bar  </td>
+<td class="issue">Touchpad on/off" iconin Touchpad UI can synchronous with display on task bar.; Add HWIDs DLL0631 and DLL0632 in Windows 8 or 8.1.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46659  </td>
+<td class="issue">DellWPF - add back "Edge Scroll & Zoom" page in UI  </td>
+<td class="issue">Fixed typo
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46771  </td>
+<td class="issue">Maple - apply HWIDs  </td>
+<td class="issue">Apply HWIDs for Dell Maple.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46781  </td>
+<td class="issue">Mulberry - 2-finger horizontal slide always send the left/right arrow keys on Metro UI  </td>
+<td class="issue">Fixed 2F horizontal scrolling sends left/right arrow keys on Metro Start Menu.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.7
+
+
+Date: 01-10-2014
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46476  </td>
+<td class="issue">[ACM2.0] Edge swipes  </td>
+<td class="issue">Eliminated accidental edge swipe while a finger moved to edge area of TouchPad.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46588  </td>
+<td class="issue">New Video for SGS94 and UX_UI  </td>
+<td class="issue">Updated Control Panel Help Video files.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46749  </td>
+<td class="issue">Improve 2F scrolling and inertial by using history data  </td>
+<td class="issue">Remove flag that is no longer used. Improve scrolling and inertia by using history data. Update 2FScrolling inertia settings for improved 2F scrolling. Change Inertia speed to be consistent with current settings.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44710  </td>
+<td class="issue">SPyder ULT - TP is disable when check "Disable Touchpad when USB mouse present" w/ touch panel   </td>
+<td class="issue">1.Add SYN0608 and SYN0609 into exclusion list for DELL. 2.Rollback "DisableIntPDFeature_DefaultOff_AddReg" setting.; The Disable the internal PD if an ext USB mouse arrives feature is enabled and defaulted to on.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46659  </td>
+<td class="issue">DellWPF - add back "Edge Scroll & Zoom" page in UI  </td>
+<td class="issue">Added "Edge Scroll & Zoom" page on Win8 for clickpad.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46689  </td>
+<td class="issue">Redwood - Change HWID from DellWPF.inf to DellWPF_RMIHID.inf  </td>
+<td class="issue">Moved DLL064D to DellWPF_RMIHID.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.6
+
+
+Date: 12-27-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Moved DLL0631, DLL0632 from DellWPF_RMIHID to DellWPF.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.5
+
+
+Date: 12-20-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46624  </td>
+<td class="issue">Suppress Palm Clicking for ForcePad  </td>
+<td class="issue">Suppressed palm clicking for ForcePad.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46039  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - add a checkbox to disable navigation in the button zone  </td>
+<td class="issue">Removed checkbox for "disable navigation in the button zone" from main trunk.; Modified UI.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.4
+
+
+Date: 12-12-2013
+</strong></div>
+<br> No changes<br>
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.3
+
+
+Date: 12-06-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Lower the warning level to avoid annoying debug message.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46526  </td>
+<td class="issue">Unexpected Click when a finger moves out of TouchPad from edge  </td>
+<td class="issue">Fixed unexpected click when a finger moves out of the ForcePad from edge.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46486  </td>
+<td class="issue">Hadley:  One-finger edge swipe function is mis-triggered by swiping at the middle of TP  </td>
+<td class="issue">Fixed right edge swip is triggered on the center of touchpad.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46520  </td>
+<td class="issue">DellWPF - add back "Edge Scroll & Zoom" page in UI  </td>
+<td class="issue">Added back "Edge Scroll & Zoom" page in UI.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.2
+
+
+Date: 11-27-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46388  </td>
+<td class="issue">DellWPF (Marble Falls) - Touchpad on/off" icon display in Touchpad UI can't  synchronous with display on task bar  </td>
+<td class="issue"> : Removed two extra "s.; Touchpad on/off" iconin Touchpad UI can synchronous with display on task bar.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.1
+
+
+Date: 11-21-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46039  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - add a checkbox to disable navigation in the button zone  </td>
+<td class="issue">Rollback due to committing by accident.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46285  </td>
+<td class="issue">DellWPF - add back "Edge Scroll & Zoom" page in UI  </td>
+<td class="issue">Added back "Edge Scroll & Zoom" page in UI.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 18.0.0
+
+
+Date: 11-14-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46243  </td>
+<td class="issue">Difference performance of 2 Finger Tap  </td>
+<td class="issue">Wait 20ms delay and retry ModeSwitch until it is sucessful or timeout.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46284  </td>
+<td class="issue">Dell MUP update to v2.4.2  </td>
+<td class="issue">Updated Dell MUP to 2.4.2.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.1.1
+
+
+Date: 11-07-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46162  </td>
+<td class="issue">HP-_project_: Unable to set EdgeMotion Speed faster than default  </td>
+<td class="issue">Increased maximum edgemotion speed which has more selections from the edge motion speed slider.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46206  </td>
+<td class="issue">Locking Drag has no function in OEM INF  </td>
+<td class="issue">Fixed Lock Drag no funtion issuel.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46218  </td>
+<td class="issue">Calculate the force after TPFiler  </td>
+<td class="issue">Calculate the force after TPFiler
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46220  </td>
+<td class="issue">Make ClickDrag edgemotion on ForcePad  </td>
+<td class="issue">Made ClickDrag edgemotion work after force calculation was moved after CTPFilter.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46039  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - add a checkbox to disable navigation in the button zone  </td>
+<td class="issue">Rollback and change registry key path.; Added a checkbox to disable navigation in the button zone.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.1.0
+
+
+Date: 10-31-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45899  </td>
+<td class="issue">Add Code for supporting Legacy TouchPad PC settings opt-in on win 8.1  </td>
+<td class="issue">Add code to support Legacy touchpad setting on win8.1
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45967  </td>
+<td class="issue">BSOD on version 17.0.8.11  </td>
+<td class="issue">Check IRQL before calling KeClearEvent.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46066  </td>
+<td class="issue">2F click & drag terminates when the force is relaxed = make it similar to 1F click & drag  </td>
+<td class="issue">Added code to support 2F drag with force released.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46082  </td>
+<td class="issue">BSOD after S3 resume  </td>
+<td class="issue">Move startTimer in front of syn function.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46015  </td>
+<td class="issue">Redwood - Apply HWID  </td>
+<td class="issue">Added pnpid
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-46039  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - add a checkbox to disable navigation in the button zone  </td>
+<td class="issue">Added a checkbox to disable navigation in the button zone.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.20
+
+
+Date: 10-25-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-46014  </td>
+<td class="issue">OEMWPF and OEMWPF_RMIHID: TP can't work after drag file with DragLock function enabled with TP v17.0.17.0  </td>
+<td class="issue">Added fix to release drag lock after 500ms timeout, and not make touchpad frozen. Update code to allow dribble packets to be sent, but not mess other sending group packets.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.19
+
+
+Date: 10-17-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45281  </td>
+<td class="issue">Click action is not consistent  </td>
+<td class="issue">Fixed the issue which checked wrong registry control for enabling/disabling 1Palm+MF clicking.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45755  </td>
+<td class="issue">resting palm + 1F click or 2F click support   </td>
+<td class="issue">Removed TL2s.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45976  </td>
+<td class="issue">Skip force calculation for Palm  </td>
+<td class="issue">Skipped force calculation if there is only palm without any finger.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45971  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - Picture can't be locked when scrolling with two fingers  </td>
+<td class="issue">Merge branch fix to trunk
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.18
+
+
+Date: 10-11-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45934  </td>
+<td class="issue">Add different force release threshold for 2F drag there is one finger in the button  </td>
+<td class="issue">Added another force release threshold for 1F resting + another finger drag.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45976  </td>
+<td class="issue">Skip force calculation for Palm  </td>
+<td class="issue">Skipped force calculation for palm object.; Skipped force calculation if there is only  palm without any finger.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45977  </td>
+<td class="issue">Add "Enable Force" in the tray icon to disable/enable force continuation.  </td>
+<td class="issue">Added control option "Enable Force" in tray icon that allows end user to enable/disable force conitnuation pinch and scrolling, and 2F clicking.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45922  </td>
+<td class="issue">Hadley 14"/15"/17" - One finger edge swipe tuning  </td>
+<td class="issue">Adjusted edge swipe area size of Hadley.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.17
+
+
+Date: 10-03-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45281  </td>
+<td class="issue">Click action is not consistent  </td>
+<td class="issue">Added registry control to enable/disable 1Palm+MF clicking.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45755  </td>
+<td class="issue">resting palm + 1F click or 2F click support   </td>
+<td class="issue">1, Used ClickSmart for 2F click in ForcePad, we don't need to consider the force. 2, Made 1Palm+1F and 2F click work.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45756  </td>
+<td class="issue">resting palm + 2F tap  </td>
+<td class="issue">Fixed bit mask. Reimplemented MF tap with resting fingers in button zone.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45918  </td>
+<td class="issue">Add FW RawPacket Position filter to the driver  </td>
+<td class="issue">Add FW RawPacket Position filter to the driver
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45815  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID: Shortcut menu cannot be activated when 2F click on the left or right button area  </td>
+<td class="issue">Add clickpad omni-mode related settings.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.16
+
+
+Date: 09-26-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-44750<br>(20130628 meeting with Kirk)  </td>
+<td class="issue">After log file capture Kirk would like the default folder opened so that the log file can be copied or viewed instead of just closing  </td>
+<td class="issue">Add option for user to open log file folder after collecting diagnostic info
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45827  </td>
+<td class="issue">Add option to show progress either in current command prompt window or show it in another command prompt window title  </td>
+<td class="issue">Added an option to show progress either in current command prompt window or show it in another command prompt window title
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45799  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID: mouse cursor should not change icon when doing gestures  </td>
+<td class="issue">Disable cursor tracking for all gestures.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45836  </td>
+<td class="issue">Jarama  - TP no function when "Disable Touchpad when USB Mouse present" without USB mouse attached.  </td>
+<td class="issue">Add more case into exclusion list.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.15
+
+
+Date: 09-19-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Added HID mouse filter callback functions.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45582  </td>
+<td class="issue">BSoD on WHCK test  </td>
+<td class="issue">Keyboard filter driver should pass specific IOCTL to function driver.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45786  </td>
+<td class="issue">BSOD 0x1E occur when customer uninstall driver  </td>
+<td class="issue">For uninstall case, we still need to unregister notification handler.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45792  </td>
+<td class="issue">988033 Touchpad cannot be disabled/Enabled by hotkey(Fn+f2)on bullet unit  </td>
+<td class="issue">Fix Mux KBC if touchpad is connected to port 1, 2 or 3.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45801  </td>
+<td class="issue">Keep motion/tap/gesture suppression after palm before timeout  </td>
+<td class="issue">Last palm time stamp variables were reset. Fix "keep motion/tap/gesture suppressed after palm before timeout" feature.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45803  </td>
+<td class="issue">Show right asic type from Diag. page  </td>
+<td class="issue">Show right ASIC type for 1320 and 1321 on Diag. page.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.14
+
+
+Date: 09-13-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45582  </td>
+<td class="issue">BSoD on WHCK test  </td>
+<td class="issue">Fix BSOD when doing system WHCK test
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45663  </td>
+<td class="issue">BSOD for WHCK "Fault Injection Test"  </td>
+<td class="issue">Fix WHCK Fault Injection Test
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44670  </td>
+<td class="issue">Dell Testarossa - Left/right Edge swipes need fine tuning  </td>
+<td class="issue">Add two more platforms for adjusted Edge Swipe zone size.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45618  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - Undesired cursor movement  when do    vertical scrolling via TouchPad buttons area  </td>
+<td class="issue">Adjust ButtonZoneActivationRetry count to decrease the failed chance of 2finger vertical scroll from button zone
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.13
+
+
+Date: 09-05-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-44637  </td>
+<td class="issue">Testarossa - BITS087995: [PT_TSA]Sometimes mouse cursor    don't change icon as scrolling  </td>
+<td class="issue">Added fix to show custom cursor correctly.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45194  </td>
+<td class="issue">English description on Simplified Chinese OS  </td>
+<td class="issue">Update translations
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45590  </td>
+<td class="issue">BSOD 0x10D occur when doing Restart,S3 and S4 +LAN (Right usb port) 14 hours  </td>
+<td class="issue">Unregister RMI callback func before register it.
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">add string for group14
+</td>
+</tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">change Group9_Win8->Group14_Win8 for Dell_GROUP14_InterTouch_Win8_Inst
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44657  </td>
+<td class="issue">Murcielago_ULT - BITS087435[CS_Comp]Win8.1_9405, Touchpad UI will not    minimize when resume from CS mode.  </td>
+<td class="issue">Close the DellWPF GUI when entering connected standby.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44670  </td>
+<td class="issue">Dell Testarossa - Left/right Edge swipes need fine tuning  </td>
+<td class="issue">adjust edge-swipe zone size
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.12
+
+
+Date: 08-30-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45504  </td>
+<td class="issue">Spyder ULT - There is no function after install driver  </td>
+<td class="issue">Pass the WdfRequest handle to the WDF function .
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45335  </td>
+<td class="issue">Testarossa - BITS101617 TP no function when "Disable Touchpad when USB Mouse present" even W/O USB mouse.  </td>
+<td class="issue">Add more cases to PNPDisableExclusionList.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.11
+
+
+Date: 08-23-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45258  </td>
+<td class="issue">OEM_project_ (SYN1E62) - BSOD after installing v17.0.9 driver  </td>
+<td class="issue">Use InterlockedExchange() and add comments.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45335  </td>
+<td class="issue">Testarossa - BITS101617 TP no function when "Disable Touchpad when USB Mouse present" even W/O USB mouse.  </td>
+<td class="issue">Add more cases to PNPDisableExclusionList.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.10
+
+
+Date: 08-15-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45096  </td>
+<td class="issue">Device fails detection after reflashing fw using SynapticsReflash found in v17_0_7  </td>
+<td class="issue">Fixed Device fails detection after reflashing fw
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45258  </td>
+<td class="issue">OEM_project_ (SYN1E62) - BSOD after installing v17.0.9 driver  </td>
+<td class="issue">Use atomic variable to avoid reentry and add timeout mechanism as well.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45171  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - Dell TP GUI gesture "Zoom" and "Rotation" items were not translated in French/German  </td>
+<td class="issue">Fix some translation problems
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45232  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - Dell Touchpad UI can't be normally opened at Control Panel by Tab.  </td>
+<td class="issue">Fixed run time error of control panel.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45270  </td>
+<td class="issue">Testarossa - Chnage port from 60/64 to 68/6C  </td>
+<td class="issue">Add KBCNotifyConfig bit of ekbcdcfNotifyKBCViaOEMPort686C to send notification state of touchpad via 68 6C port for PNPID: DLL05FD, DLL05FE and DLL060D
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.9.1
+
+
+Date: 08-14-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45258  </td>
+<td class="issue">OEMEnvy (SYN1E62) - BSOD after installing v17.0.9 driver  </td>
+<td class="issue">Rollback codes. It seems problem to call Mutex acquire function in DPC.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.9
+
+
+Date: 08-08-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-45025  </td>
+<td class="issue">After use touchpad to reboot system, it would BSOD in OS  </td>
+<td class="issue">Check IRQL before calling RtlQueryRegistryValues function.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45111  </td>
+<td class="issue">Mode switch failed on Win8.1  </td>
+<td class="issue">Suppor OEM SMBus Host Controller.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45147  </td>
+<td class="issue">Cusor jumps with OEM 5BFP  </td>
+<td class="issue">Add mechanism to avoid reentry for SMBus driver. Port reentry avoidance mechanism to CRMIPort.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.8
+
+
+Date: 08-01-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-42303  </td>
+<td class="issue">Improve Driver build process and release note for customers  </td>
+<td class="issue">Remove useless notification in middle of build; Fix file verification script; Fix UTF-8 failure to translate non-ASCII apostrophe in release notes
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44354  </td>
+<td class="issue">Horizontal two finger scrolling can't work on PDF file via win8 PFD APP  </td>
+<td class="issue">Fix horizontal scrolling becomes vertical scrolling in Metro simple Chinese pdf reader
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44770  </td>
+<td class="issue">Bonsai - Can not use zoom in/out function after put a third or more fingers on the touchpad  </td>
+<td class="issue">Avoid canceling pinch action when more finger down feature is set.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44975  </td>
+<td class="issue">WHCK Failure (PS/2) - 17.0.5.3 | HPConsumer.inf (Next/Blue)  </td>
+<td class="issue">Added Synaptics generic compatible ID *SYN0002 for all PS2 touchpad infs; Added a hack until Microsoft fixes its WHCK tool
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-45042  </td>
+<td class="issue">Scrolling is not smoothly on metro app Photos and Camera while ZoomPerfect is enabled  </td>
+<td class="issue">Fix injection error for 2 finger scrolling gesture under Metro-mode app. This error will cause scrolling not smooth.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44653  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - zig zag to enable touchpad could be triggered with circular motion  </td>
+<td class="issue">Fixed ZigZag motion to enable touchpad feature.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44879  </td>
+<td class="issue">DellWPF TPPB - modified Win7 UI for 2013  </td>
+<td class="issue">New translations for tooltips
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.7
+
+
+Date: 07-26-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-44571  </td>
+<td class="issue">Spyder ULT - Default setting is incorrect  </td>
+<td class="issue">Duplicate of ClickpadViews, ClickpadViewModel for OEM Win7 UI for 2013.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44879  </td>
+<td class="issue">OEMWPF TPPB - modified Win7 UI for 2013  </td>
+<td class="issue">Changed help text. Added new help text, all in English for now.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.6
+
+
+Date: 07-18-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Display ACM 2.0 type in Diagnostic panel
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44941  </td>
+<td class="issue">Getting wrong register offset of ACM20 existence for old FW  </td>
+<td class="issue">Parsing ACM2.0 existence information correctly.; Update the packrat number.; Provide ACM2.0 disabled setting.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.5
+
+
+Date: 07-11-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Follow-up: add registry overrides for RMI4 caps; Add RMI4 capabilities query to API
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44188  </td>
+<td class="issue">Customer wants previous release notes combined with current release notes  </td>
+<td class="issue">Add a "history" feature to ReleaseNotes.HTML; Build script now creates a history from previous release notes
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44828<br>(958966)  </td>
+<td class="issue">It will pop up the error "SynTPEnh.exe-Entry Point Not Found" at the end of insttalling Synaptics driver on Vista 32&64.   </td>
+<td class="issue">Fixed SynTPEnh and SynTPHelper crash in Vista with driver built with Vs2012
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-43984  </td>
+<td class="issue">Dell Latitude 3540 - palm rejection not working correctly  </td>
+<td class="issue">As we changed PalmCheck logic from >= w-Threshold to > w-Threshold, so we need to change threshold settings accordingly.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.4
+
+
+Date: 07-10-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+</td><td class="issue">   </td>
+<td class="issue">Do fixme and handle F11 data offsets properly. Still a wip since a large number of F11 data registers remain unchecked in the interrupt handler.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44721  </td>
+<td class="issue">Geasture issue on Google Chromewith High DPI setting  </td>
+<td class="issue">Fixed issue of two finger scrolling not working when cursor is near the right edge of the window with DPI=150%
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44750<br>(20130628 meeting with Kirk)  </td>
+<td class="issue">After log file capture Kirk would like the default folder opened so that the log file can be copied or viewed instead of just closing  </td>
+<td class="issue">In Windows 8.1 Preview, the GetVersion(Ex) APIs have been deprecated.; In Windows 8.1 Preview, the GetVersion(Ex) APIs have been deprecated. Update Manifest
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44653  </td>
+<td class="issue">DellWPF and DellWPF_RMIHID - zig zag to enable touchpad could be triggered with circular motion  </td>
+<td class="issue">Fixed ZigZag motion to enable touchpad feature.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.3
+
+
+Date: 07-10-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-42303  </td>
+<td class="issue">Improve Driver build process and release note for customers  </td>
+<td class="issue">For release notes, if "Contact" field is missing, print the Creator of the Jira issue; Create a default empty dictionary in case JSON load fails for invalid and missing Jira numbers; Use Python decode('utf-8-sig') to strip byte order mark out of text; Do not distribute Release.txt any more since it is not updated.  Use ReleaseNotes.html.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-43964  </td>
+<td class="issue">ACM 2.0 change of algorithm strength driver meta-bug  </td>
+<td class="issue">Make contact type interface consistent. Add HasACM2() query.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44618<br>(TM-2768-001)  </td>
+<td class="issue">The systray icons will flicker when scrolling in a photos viewer with three finger flick  </td>
+<td class="issue">Only turned on IME workaround for twist action instead of all gestures for Photo Viewer.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44682  </td>
+<td class="issue">Use maximum force instead of total force for multiple fingers click   </td>
+<td class="issue">Used maximum force instead of total force for MF click.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44692<br>(ECR177029, ECR176429)  </td>
+<td class="issue">Copyright issue  </td>
+<td class="issue">Update Coypyright to 1996-2013
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44670  </td>
+<td class="issue">Dell Testarossa - Left/right Edge swipes need fine tuning  </td>
+<td class="issue">Changed edge swipe settings for DLL05FD
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.2
+
+
+Date: 07-10-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-44299  </td>
+<td class="issue">Right side, down side "Return at edge of screen" in Momentum doesn't work  </td>
+<td class="issue">Fixed the bounce off screen edge in momentum not working issue with high DPI.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+<br>
+<div id="version"><div id="header"><strong>Version: 17.0.1
+
+
+Date: 07-10-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-44440  </td>
+<td class="issue">Convert packet count to time  </td>
+<td class="issue">Improve taps-Convert packet count to time.; Make gesture work properly for different report rates of devices; Make PalmOnPad gesture works normal for various report rate of devices.; code improve by rename a function.; Add a utility function to clear packet.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44531  </td>
+<td class="issue">Silent Uninstallation fail in in toshiba.inf  </td>
+<td class="issue">Silent Uninstallation fail with SynIsdll built with Vs2012; Silent Uninstallation fail in in Win8 x64
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44533  </td>
+<td class="issue">Application crashes when we double tap on the top left corner of the TP to disable the touchpad in HPNEWUI v17.0.0  </td>
+<td class="issue">Changed call convention from std to cdecl to fix syntpenh creash when it reads Png file.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44564  </td>
+<td class="issue">ACM2.0 can't work on OEM machine  </td>
+<td class="issue">FollowUp:Change uiQuery36Offset -- to uiQuery36Offset--.; Correct RMI query parsing.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+
+<div id="version"><div id="header"><strong>Version: 17.0.0
+
+
+Date: 06-07-2013
+</strong></div>
+<table>
+<tbody>
+<tr>
+<th style="width:10%">Issue Number</th>
+<th style="width:45%">Description</th>
+<th style="width:45%">Fix Comment</th></tr>
+<tr>
+<td class="td">
+TP-44045  </td>
+<td class="issue">_project_ (175) - Tap to click will invalid for few seconds after 2 or 3 finger slide on pad  </td>
+<td class="issue">Improve conmunication between API and Kernel Driver.;
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44046  </td>
+<td class="issue">_project_ (176) - Continue tap the 2-finger on the touchpad surface will always trigger both of mouse right and left button events.  </td>
+<td class="issue">Improve tap vs drag with 1F and multifingers, as well as communication between API and Kernel Driver..
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44244  </td>
+<td class="issue">Task tray Synaptics icon, "Pressure graph" and "MoodPad" items cannot be seen.  </td>
+<td class="issue">Fixed the wrong location of popmenu by right clicking trayicon, when the size of all items is set to 150% in control panel.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44299  </td>
+<td class="issue">Right side, down side "Return at edge of screen" in Momentum doesn't work  </td>
+<td class="issue">Fixed the bounce off screen edge in momentum not working issue, when the size of all items is set to 150% in control panel.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44300  </td>
+<td class="issue">Enable Tap zone, even touch right up corner, Maximum windows doesn't work  </td>
+<td class="issue">Fixed the issue of maximizing windows not working, when the size of all items is set to 150% in control panel.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44348  </td>
+<td class="issue">Switch from VS2005 to VS2012 by Default  </td>
+<td class="issue">Save 2005 solution; Switch from VS2005 to VS2012 by Default Use include and lib files from T drive; Bump SynTPCo19.dll to SynTPCo20.dll; SynDell;share\Png; Solution files; KmdfLibraryVersion = 1.11, WdfCoInstaller01011.dll; SynOsLib dir.lst; Remove ...2012.sln files; Inf2Cat; forcetext2bin; Use Include and lib files from T drive
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44457  </td>
+<td class="issue">16.6.5 sony2006.inf Two-Finger horizontal scroll failed.  </td>
+<td class="issue">Only read application specific settings when apps switch happens, otherwise some user specific settings will be overridden if CPL is opened and changes are not apllied.
+</td>
+</tr>
+<tr>
+<td class="td">
+TP-44402  </td>
+<td class="issue">Dell Oak (Haswell) - 3F swipe up/down will not trigger search/setting functions in IE  </td>
+<td class="issue">Removed 3F swipe up/down to switch tab for IE.
+</td>
+</tr>
+</tbody></table><div id="footer"></div></div>
+
+</div>
+<div style="clear: both"></div>
+<div id="footer">
+<h3> </h3>
+<p>&copy; 2013-2016 Synaptics, Inc. All rights reserved</p>
+</div>
+</div>
+</body>
+</html>
